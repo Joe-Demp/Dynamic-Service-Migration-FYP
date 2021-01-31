@@ -1,0 +1,16 @@
+cd C:\Users\demps\IntelliJProjects\fyp\mec-framework
+mvn install -pl core
+mvn compile
+
+cd C:\Users\demps\IntelliJProjects\fyp\console-app
+mvn exec:java -Plocal-sental
+
+cd C:\Users\demps\IntelliJProjects\fyp\mec-framework\EdgeNode
+mvn exec:java -Plocal
+
+cd C:\Users\demps\IntelliJProjects\fyp\mec-framework\CloudNode
+mvn exec:java -Plocal-sental
+
+cd C:\Users\demps\IntelliJProjects\fyp\mec-framework\Orchestrator
+mvn exec:java -Pdebug
+# (or without debug)

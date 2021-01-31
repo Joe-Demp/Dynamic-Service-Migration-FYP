@@ -1,0 +1,101 @@
+connected to orchestrator
+/127.0.0.1:61537
+21:37:47.364 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:37:47.377 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "NodeInfoRequest"
+}
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.gson.internal.reflect.UnsafeReflectionAccessor (file:/C:/Users/demps/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar) to field java.io.File.path
+WARNING: Please consider reporting this to the maintainers of com.google.gson.internal.reflect.UnsafeReflectionAccessor
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+21:37:52.249 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:37:52.258 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:38:12.270 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:38:12.346 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:38:13.861 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:38:13.869 [service.cloud.Main.main()] DEBUG Cloud - {
+  "requesterId": "43996497-5657-47d2-b524-fa535eda6e43",
+  "serviceName": "docker.tar",
+  "type": "ServiceRequest"
+}
+21:38:13.883 [service.cloud.Main.main()] DEBUG Cloud - serverAddress=0.0.0.0/0.0.0.0:8090
+21:38:13.895 [service.cloud.Main.main()] DEBUG Cloud - Sending: {
+  "requesterId": "43996497-5657-47d2-b524-fa535eda6e43",
+  "serviceOwnerID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "serviceOwnerAddress": "localhost:8090",
+  "serviceName": "docker.tar",
+  "type": "ServiceResponse"
+}
+21:38:15.218 [WebSocketSelector-21] DEBUG TransferServer - Launched the transfer server
+21:38:15.261 [WebSocketWorker-17] DEBUG TransferServer - connected to client at /127.0.0.1:61570
+21:38:15.391 [WebSocketWorker-17] DEBUG TransferServer - Trying to send the file
+21:38:15.959 [WebSocketWorker-17] DEBUG TransferServer - File seems to have been sent successfully
+21:38:15.968 [WebSocketSelector-21] INFO TransferServer - In TransferClient#onClose
+21:38:15.977 [WebSocketSelector-21] INFO TransferServer - Remote WebSocket client /127.0.0.1:61570
+21:38:15.985 [WebSocketSelector-21] INFO TransferServer - Code: 1006
+21:38:15.990 [WebSocketSelector-21] INFO TransferServer - Reason:
+21:38:15.999 [WebSocketSelector-21] INFO TransferServer - Remote: true
+21:38:16.004 [WebSocketSelector-21] INFO TransferServer - Trying to stop this TransferServer
+21:38:32.266 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:38:32.272 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:38:52.279 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:38:52.285 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:39:12.279 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:39:12.292 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:39:32.292 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:39:32.299 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:39:52.295 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:39:52.303 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:40:12.297 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:40:12.306 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:40:32.316 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:40:32.346 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:40:52.324 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:40:52.330 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:41:12.327 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:41:12.344 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:41:32.341 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:41:32.348 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}
+21:41:52.341 [service.cloud.Main.main()] DEBUG Cloud - from localhost/127.0.0.1:8080
+21:41:52.348 [service.cloud.Main.main()] DEBUG Cloud - {
+  "assignedUUID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "type": "ServerHeartbeatRequest"
+}

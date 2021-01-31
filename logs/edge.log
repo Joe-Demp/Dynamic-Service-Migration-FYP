@@ -1,0 +1,147 @@
+21:37:50.137 [service.edge.Main.main()] INFO service.edge.Edge - Listening to orchestrator at localhost/127.0.0.1:8080 on local address /127.0.0.1:61541
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.gson.internal.reflect.UnsafeReflectionAccessor (file:/C:/Users/demps/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar) to field java.io.File.path
+WARNING: Please consider reporting this to the maintainers of com.google.gson.internal.reflect.UnsafeReflectionAccessor
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+NodeInfoRequest
+{
+  "assignedUUID": "43996497-5657-47d2-b524-fa535eda6e43",
+  "type": "NodeInfoRequest"
+}
+ServerHeartbeatRequest
+{
+  "assignedUUID": "43996497-5657-47d2-b524-fa535eda6e43",
+  "type": "ServerHeartbeatRequest"
+}
+ServerHeartbeatRequest
+{
+  "assignedUUID": "43996497-5657-47d2-b524-fa535eda6e43",
+  "type": "ServerHeartbeatRequest"
+}
+ServiceResponse
+{
+  "requesterId": "43996497-5657-47d2-b524-fa535eda6e43",
+  "serviceOwnerID": "fbb6889a-109f-4590-901c-898c2a7b8152",
+  "serviceOwnerAddress": "localhost:8090",
+  "serviceName": "docker.tar",
+  "type": "ServiceResponse"
+}
+21:38:13.960 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+21:38:13.967 [service.edge.Main.main()] INFO service.edge.Edge - Launching a transfer client for the server at ws://localhost:8090
+21:38:13.979 [service.edge.Main.main()] INFO service.edge.Edge - The transfer client says Docker was launched.
+21:38:13.989 [service.edge.Main.main()] INFO service.edge.Edge - Closed the TransferClient and launching the service on Docker
+21:38:14.008 [service.edge.Main.main()] INFO service.host.ServiceHost - Launched a ServiceHost on port 8095
+21:38:14.018 [service.edge.Main.main()] INFO service.host.ServiceHost - This server listens to 0.0.0.0/0.0.0.0:8095
+21:38:14.024 [service.edge.Main.main()] INFO service.edge.Edge - Asking the serviceHost to run. This thread should block here?
+21:38:15.263 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - In TransferClient#onClose
+21:38:15.294 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Code: -1
+21:38:15.305 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Reason:
+
+21:38:15.313 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Remote: false
+
+
+22:16:30.025 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+22:16:30.034 [service.edge.Main.main()] INFO service.edge.Edge - Launching a transfer client for the server at ws://localhost:8090
+22:16:30.045 [service.edge.Main.main()] INFO service.edge.Edge - The transfer client says Docker was launched.
+22:16:30.053 [service.edge.Main.main()] INFO service.edge.Edge - Closed the TransferClient and launching the service on Docker
+22:16:30.071 [service.edge.Main.main()] INFO service.host.ServiceHost - Launched a ServiceHost on port 8095
+22:16:30.082 [service.edge.Main.main()] INFO service.host.ServiceHost - This server listens to 0.0.0.0/0.0.0.0:8095
+22:16:30.090 [service.edge.Main.main()] INFO service.edge.Edge - Starting the serviceHost
+22:16:31.218 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - In TransferClient#onClose
+22:16:31.239 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Code: -1
+22:16:31.264 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Reason:
+
+22:16:31.268 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Remote: false
+ServerHeartbeatRequest
+{
+  "assignedUUID": "5e2850a6-7484-45af-a0a8-a810a979d04f",
+  "type": "ServerHeartbeatRequest"
+}
+ServerHeartbeatRequest
+{
+  "assignedUUID": "5e2850a6-7484-45af-a0a8-a810a979d04f",
+  "type": "ServerHeartbeatRequest"
+}
+
+
+22:25:05.588 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+22:25:05.596 [service.edge.Main.main()] INFO service.edge.Edge - Launching a transfer client for the server at ws://localhost:8090
+22:25:06.722 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - connected to tempServer TIME AT FIRST CONNECTION 2021-01-21T22:25:06.720851500Z
+22:25:09.491 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Trying to write file service.tar
+22:25:09.808 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - File written and FileOutputStream closed
+22:25:09.817 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - in the launch phase2 service.tar and its at C:\Users\demps\IntelliJProjects\fyp\mec-framework\EdgeNode\service.tar
+22:25:14.875 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Waking after 5 minute sleep. Docker should have loaded file.
+22:25:14.894 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - TIME AT DOCKER LAUNCH 2021-01-21T22:25:14.894668300Z
+22:25:15.564 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+etc etc
+
+
+20:33:18.831 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+20:33:18.848 [service.edge.Main.main()] INFO service.edge.Edge - Launching a transfer client for the server at ws://localhost:8090
+20:33:20.724 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - connected to tempServer TIME AT FIRST CONNECTION 2021-01-24T20:33:20.723879300Z
+20:33:22.510 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Trying to write file service.tar
+20:33:23.501 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - FileOutputStream writing to java.io.FileDescriptor@602c8426
+20:33:23.520 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - File written and FileOutputStream closed
+20:33:23.528 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - in the launch phase2 service.tar and its at C:\Users\demps\IntelliJProjects\fyp\mec-framework\EdgeNode\service.tar
+20:33:28.597 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Waking after 5 second sleep. Docker should have loaded file.
+20:33:28.622 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - TIME AT DOCKER LAUNCH 2021-01-24T20:33:28.622705200Z
+20:33:36.314 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+20:33:36.324 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+20:33:36.330 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+20:33:36.338 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+20:33:36.344 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - dc :: null
+
+
+21:32:54.075 [service.edge.Main.main()] INFO service.edge.Edge - {
+  "requesterId": "510a169d-2a2d-499b-893d-930b1c335c52",
+  "serviceOwnerID": "dcc60ba1-f9a3-4943-ae9c-e54d506edc56",
+  "serviceOwnerAddress": "localhost:8090",
+  "serviceName": "docker.tar",
+  "type": "ServiceResponse"
+}
+21:32:54.096 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+21:32:54.104 [service.edge.Main.main()] INFO service.edge.Edge - Launching a transfer client for the server at ws://localhost:8090
+21:32:54.117 [service.edge.Main.main()] INFO service.edge.Edge - The transfer client says Docker was launched.
+21:32:54.125 [service.edge.Main.main()] INFO service.edge.Edge - Closed the TransferClient and launching the service on Docker
+21:32:54.144 [service.edge.Main.main()] INFO service.host.ServiceHost - Launched a ServiceHost on port 8095
+21:32:54.153 [service.edge.Main.main()] INFO service.host.ServiceHost - This server listens to 0.0.0.0/0.0.0.0:8095
+21:32:54.163 [service.edge.Main.main()] INFO service.edge.Edge - Starting the serviceHost
+21:32:55.222 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - In TransferClient#onClose
+21:32:55.256 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Code: -1
+21:32:55.271 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Reason:
+
+21:32:55.288 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Remote: false
+21:33:04.319 [service.edge.Main.main()] INFO service.edge.Edge - {
+  "assignedUUID": "510a169d-2a2d-499b-893d-930b1c335c52",
+  "type": "ServerHeartbeatRequest"
+}
+21:33:24.319 [service.edge.Main.main()] INFO service.edge.Edge - {
+  "assignedUUID": "510a169d-2a2d-499b-893d-930b1c335c52",
+  "type": "ServerHeartbeatRequest"
+}
+
+
+21:46:15.993 [service.edge.Main.main()] INFO service.edge.Edge - Edge received a service response
+21:46:16.000 [service.edge.Main.main()] DEBUG service.transfer.TransferClient - Launching TransferClient for Server at ws://localhost:8090
+21:46:17.290 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - connected to TransferServer at localhost/127.0.0.1:8090
+21:46:19.315 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - Trying to write file service.tar
+21:46:19.762 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - File written and FileOutputStream closed
+21:46:19.775 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Loading service file from C:\Users\demps\IntelliJProjects\fyp\mec-framework\EdgeNode\service.tar into Docker
+21:46:24.992 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Waking after 5 second sleep. Docker should have loaded file.
+21:46:25.031 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Waiting for process to stop
+21:46:29.243 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Process finished with status 0
+21:46:29.259 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Loaded image: sample:latest
+21:46:29.269 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Finished logging process output
+21:46:29.275 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Asking docker to run container 'sample'
+21:46:29.291 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Waiting for process to stop
+21:46:34.801 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Process finished with status 0
+21:46:34.813 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+21:46:34.824 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+21:46:34.836 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+ ...
+21:46:35.649 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+21:46:35.655 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+21:46:35.662 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - docker.stdout: Wide Awaaaaake
+21:46:35.668 [WebSocketConnectReadThread-17] INFO service.transfer.DockerController - Finished logging process output
+21:46:35.674 [WebSocketConnectReadThread-17] INFO service.transfer.TransferClient - All Docker work should be done by now
