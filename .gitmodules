@@ -7,3 +7,6 @@
 [submodule "console-app"]
 	path = console-app
 	url = https://gitlab.com/joe-dempsey-fyp/console-app.git/
+[submodule "streaming-sample"]
+	path = streaming-sample
+	url = https://gitlab.com/joe-dempsey-fyp/streaming-sample.git
