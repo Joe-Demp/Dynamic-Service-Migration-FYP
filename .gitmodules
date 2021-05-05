@@ -1,9 +1,6 @@
 [submodule "mec-framework"]
 	path = mec-framework
 	url = https://gitlab.com/joe-dempsey-fyp/mec-framework.git/
-[submodule "android-app"]
-	path = android-app
-	url = https://gitlab.com/joe-dempsey-fyp/android-app.git/
 [submodule "console-app"]
 	path = console-app
 	url = https://gitlab.com/joe-dempsey-fyp/console-app.git/
