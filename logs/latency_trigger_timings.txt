@@ -1,0 +1,98 @@
+
+console-app
+
+02:31:15.835 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationAlert{sourceIp=/35.246.105.4, targetIp=/176.61.20.247}
+
+02:33:27.093 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationSuccess{targetHostUuid=e8f9e7ca-378e-4335-9a8d-c92c13f69305, sourceHostUuid=95140f12-02f8-4679-89ea-5095a4eb8249, serviceName='stream.tar'}
+
+02:33:40.516 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:33:40.769 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+
+*****************************
+
+cloud
+
+02:31:16.571 [WebSocketSelector-35] DEBUG TransferServer - Launched TransferServer listening on 0.0.0.0/0.0.0.0:8085
+02:31:16.672 [WebSocketWorker-33] DEBUG TransferServer - connected to client at /176.61.20.247:63830
+02:31:16.899 [WebSocketWorker-33] DEBUG TransferServer - Trying to send the file
+02:31:17.495 [WebSocketWorker-33] DEBUG TransferServer - File seems to have been sent successfully
+02:31:20.010 [WebSocketConnectReadThread-37] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+	...
+02:33:14.512 [WebSocketSelector-35] INFO TransferServer - In TransferServer#onClose
+02:33:14.512 [WebSocketSelector-35] INFO TransferServer - Remote WebSocket client /176.61.20.247:63830
+02:33:14.513 [WebSocketSelector-35] INFO TransferServer - Code, Reason, Remote: 1000, , true
+02:33:14.513 [WebSocketSelector-35] INFO TransferServer - Trying to stop this TransferServer
+02:33:14.550 [Thread-57] INFO TransferServer - TransferServer has stopped.
+
+*****************************
+
+edge
+
+02:31:25.033 [pool-2-thread-1] DEBUG TransferClient - Launching TransferClient for Server at ws://35.246.105.4:8085
+02:31:25.110 [pool-2-thread-1] INFO TransferClient - connected to TransferServer at /35.246.105.4:8085
+...
+02:33:19.617 [pool-2-thread-1] INFO TransferClient - Trying to write file stream.tar @ C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+...
+02:33:22.911 [pool-2-thread-1] INFO TransferClient - File written and FileOutputStream closed
+...
+02:33:25.118 [connectionLostChecker-1] INFO TransferClient - In TransferClient#onClose
+02:33:25.129 [connectionLostChecker-1] INFO TransferClient - Code: 1006
+02:33:25.132 [connectionLostChecker-1] INFO TransferClient - Reason: The connection was closed because the other endpoint did not respond with a pong in time. For more information check:
+https://github.com/TooTallNate/Java-WebSocket/wiki/Lost-connection-detection
+02:33:25.143 [connectionLostChecker-1] INFO TransferClient - Remote: false
+02:33:25.146 [pool-2-thread-1] ERROR TransferClient - In TransferClient#onError
+org.java_websocket.exceptions.WebsocketNotConnectedException
+        at org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:628)
+        at org.java_websocket.WebSocketImpl.sendFrame(WebSocketImpl.java:653)
+        at org.java_websocket.WebSocketAdapter.onWebsocketPing(WebSocketAdapter.java:78)
+        at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:809)
+        at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:379)
+        at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:216)
+        at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:508)
+        at ie.ucd.dempsey.mecframework.service.MigrationManager.acceptService(MigrationManager.java:55)
+        at ie.ucd.dempsey.mecframework.service.AcceptServiceTask.run(AcceptServiceTask.java:22)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1800)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base/java.lang.Thread.run(Thread.java:832)
+02:33:25.202 [pool-2-thread-1] DEBUG DockerController - Checking Files.exists(C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar)?=true
+02:33:25.210 [pool-2-thread-1] INFO AcceptServiceTask - Success! ServiceExists!
+02:33:25.215 [pool-2-thread-1] DEBUG DockerController - Checking Files.exists(C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar)?=true
+02:33:25.222 [pool-2-thread-1] INFO OSRuntime - Executing powershell.exe docker load --input C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+...
+02:33:36.126 [pool-2-thread-1] INFO DockerController - Waited up to 20 seconds and loading finished?=true
+02:33:36.136 [pool-2-thread-1] INFO DockerController - docker.stdout: Loaded image: stream:latest
+02:33:36.142 [pool-2-thread-1] INFO DockerController - Finished logging process output
+02:33:36.147 [pool-2-thread-1] DEBUG DockerController - C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+02:33:36.152 [pool-2-thread-1] DEBUG DockerController - stream.tar
+02:33:36.156 [pool-2-thread-1] INFO OSRuntime - Executing powershell.exe docker run -p 8090:8080 stream:latest
+02:33:36.168 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: MigrationSuccess{targetHostUuid=e8f9e7ca-378e-4335-9a8d-c92c13f69305, sourceHostUuid=95140f12-02f8-4679-89ea-5095a4eb8249, serviceName='stream.tar'}
+...
+02:33:43.744 [pool-1-thread-1] INFO ServiceOutput -
+02:33:43.750 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+02:33:43.757 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+02:33:43.764 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+02:33:43.771 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+02:33:43.780 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+02:33:43.788 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+02:33:43.795 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+02:33:43.803 [pool-1-thread-1] INFO ServiceOutput -
+02:33:44.033 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:44.026  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v0.0.1-SNAPSHOT using Java 11.0.8 on a5ed1f1b42c2 with PID 8 (/app.jar started by root in /)
+02:33:44.056 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:44.036  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+...
+02:33:46.558 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.556  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080
+(http)
+02:33:46.594 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.593  INFO 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+02:33:46.612 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.593  INFO 8 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+02:33:46.694 [WebSocketConnectReadThread-121] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:33:46.761 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.760  INFO 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+02:33:46.780 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.761  INFO 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2443 ms
+02:33:46.917 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:46.913  INFO 8 --- [           main] i.u.d.s.controller.MainController        : Data file existed? false
+02:33:47.321 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:47.320  INFO 8 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+02:33:47.849 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:47.847  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+02:33:47.890 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:47.885  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in
+5.226 seconds (JVM running for 6.525)
+02:33:49.800 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:49.797  INFO 8 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet
+'dispatcherServlet'
+02:33:49.817 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:49.799  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+02:33:49.833 [pool-1-thread-1] INFO ServiceOutput - 2021-04-13 01:33:49.801  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

@@ -1,0 +1,1170 @@
+CLOUD
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$ mvn clean compile
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------< ie.ucd.dempsey.mecframework:ServiceNode >---------------
+[INFO] Building ServiceNode 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ServiceNode ---
+[INFO] Deleting /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/mec-framework/ServiceNode/target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ServiceNode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ServiceNode ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/mec-framework/ServiceNode/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.326 s
+[INFO] Finished at: 2021-04-19T02:45:31+01:00
+[INFO] ------------------------------------------------------------------------
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$ mvn exec:java -Pcloud
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------< ie.ucd.dempsey.mecframework:ServiceNode >---------------
+[INFO] Building ServiceNode 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ ServiceNode ---
+02:47:10.358 [ie.ucd.dempsey.mecframework.Main.main()] INFO Main - /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar
+02:47:10.368 [ie.ucd.dempsey.mecframework.Main.main()] INFO Main - Did not start service. serviceFile.exists()=true startService=false
+02:47:10.472 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+02:47:10.482 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG FileUtil - Reading file /etc/os-release
+02:47:10.485 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: NAME="Ubuntu"
+02:47:10.489 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: VERSION="20.04.2 LTS (Focal Fossa)"
+02:47:10.493 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/version
+02:47:10.509 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/cpuinfo
+02:47:10.514 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+02:47:10.617 [ie.ucd.dempsey.mecframework.Main.main()] INFO ServiceNodeWsClient - Listening to orchestrator at csi420-01-vm1.ucd.ie/137.43.49.47:80 on local address /10.154.0.2:42930
+02:47:10.654 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeInfoRequest{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f}
+02:47:10.662 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+02:47:10.701 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:47:11.337 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+02:47:11.433 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServiceResponse{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, transferServerAddress=/176.61.20.247:8095, serviceName='stream.tar'}
+02:47:11.436 [ie.ucd.dempsey.mecframework.Main.main()] INFO ServiceNode - cloud-node received a ServiceResponse!
+02:47:11.441 [pool-2-thread-1] DEBUG TransferClient - Launching TransferClient for Server at ws://176.61.20.247:8095
+02:47:11.803 [WebSocketConnectReadThread-20] INFO TransferClient - connected to TransferServer at /176.61.20.247:8095
+02:47:11.935 [WebSocketConnectReadThread-20] DEBUG TransferClient - Pinged by the TransferServer!
+02:47:13.763 [WebSocketConnectReadThread-23] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:18.930 [WebSocketConnectReadThread-26] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:20.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:23.803 [WebSocketConnectReadThread-29] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:25.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:28.793 [WebSocketConnectReadThread-32] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:30.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:33.822 [WebSocketConnectReadThread-35] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:35.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:36.295 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:47:36.312 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.06262626262626263, 0.03343465045592705, 0.032388663967611336, 0.026422764227642278], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1044, 1033, 1075, 1057, 1080]  }}
+02:47:36.355 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:47:39.032 [WebSocketConnectReadThread-38] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:40.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:43.858 [WebSocketConnectReadThread-41] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:45.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:49.372 [WebSocketConnectReadThread-44] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:50.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:53.808 [WebSocketConnectReadThread-47] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:55.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:47:58.841 [WebSocketConnectReadThread-50] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:00.521 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+02:48:03.992 [WebSocketConnectReadThread-53] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:05.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:06.295 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:48:06.297 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.03873598369011213, 0.026503567787971458, 0.021406727828746176, 0.028397565922920892, 0.0254323499491353, 0.021406727828746176], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1095, 1054, 1226, 1093, 1075, 1116]  }}
+02:48:06.331 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:48:08.910 [WebSocketConnectReadThread-56] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:10.521 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+02:48:14.100 [WebSocketConnectReadThread-59] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:15.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:18.957 [WebSocketConnectReadThread-62] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:20.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:23.864 [WebSocketConnectReadThread-65] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:25.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:29.214 [WebSocketConnectReadThread-68] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:30.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:33.988 [WebSocketConnectReadThread-71] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:35.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:36.296 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:48:36.298 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.021406727828746176, 0.024539877300613498, 0.019387755102040816, 0.019387755102040816, 0.025201612903225805, 0.018404907975460124], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1207, 1064, 1132, 1064, 1169, 1084]  }}
+02:48:36.333 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:48:39.090 [WebSocketConnectReadThread-74] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:40.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:48:43.981 [WebSocketConnectReadThread-77] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:45.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:48:48.989 [WebSocketConnectReadThread-80] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:50.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:48:54.029 [WebSocketConnectReadThread-83] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:55.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:48:57.997 [WebSocketConnectReadThread-20] DEBUG TransferClient - In TransferClient#onMessage
+02:48:57.998 [WebSocketConnectReadThread-20] INFO TransferClient - Trying to write file stream.tar @ /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar
+02:48:58.692 [WebSocketConnectReadThread-86] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:00.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:00.820 [WebSocketConnectReadThread-20] INFO TransferClient - File written and FileOutputStream closed
+02:49:00.822 [WebSocketConnectReadThread-20] INFO TransferClient - Calling transferFinished.countDown()
+02:49:00.824 [WebSocketConnectReadThread-20] INFO TransferClient - transferFinished.countDown() called
+02:49:00.825 [pool-2-thread-1] DEBUG DockerController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar)?=true
+02:49:00.826 [WebSocketConnectReadThread-20] ERROR TransferClient - In TransferClient#onError
+02:49:00.827 [pool-2-thread-1] INFO AcceptServiceTask - Success! ServiceExists!
+org.java_websocket.exceptions.WebsocketNotConnectedException
+        at org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:628)
+        at org.java_websocket.WebSocketImpl.sendFrame(WebSocketImpl.java:653)
+        at org.java_websocket.WebSocketAdapter.onWebsocketPing(WebSocketAdapter.java:78)
+        at service.transfer.TransferClient.onWebsocketPing(TransferClient.java:90)
+        at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:809)
+        at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:379)
+        at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:216)
+        at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:508)
+        at java.base/java.lang.Thread.run(Thread.java:830)
+02:49:00.828 [pool-2-thread-1] DEBUG DockerController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar)?=true
+02:49:00.834 [WebSocketConnectReadThread-20] INFO TransferClient - In TransferClient#onClose
+02:49:00.835 [WebSocketConnectReadThread-20] INFO TransferClient - Code: 1006
+02:49:00.836 [pool-2-thread-1] INFO OSRuntime - Executing docker load --input /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar
+02:49:00.846 [WebSocketConnectReadThread-20] INFO TransferClient - Reason: null
+02:49:00.847 [WebSocketConnectReadThread-20] INFO TransferClient - Remote: false
+02:49:01.916 [pool-2-thread-1] INFO DockerController - Waited up to 20 seconds and loading finished?=true
+02:49:01.921 [pool-2-thread-1] INFO DockerController - docker.stdout: Loaded image: stream:latest
+02:49:01.925 [pool-2-thread-1] INFO DockerController - Finished logging process output
+02:49:01.926 [pool-2-thread-1] DEBUG DockerController - /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/stream.tar
+02:49:01.927 [pool-2-thread-1] DEBUG DockerController - stream.tar
+02:49:01.928 [pool-2-thread-1] INFO OSRuntime - Executing docker run -p 8090:8080 stream:latest
+02:49:01.937 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: MigrationSuccess{targetHostUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceHostUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, serviceName='stream.tar'}
+02:49:01.965 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationSuccess{targetHostUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceHostUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, serviceName='stream.tar'}
+02:49:03.710 [WebSocketConnectReadThread-91] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:04.441 [pool-1-thread-1] INFO ServiceOutput -
+02:49:04.447 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+02:49:04.448 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+02:49:04.448 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+02:49:04.448 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+02:49:04.449 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+02:49:04.449 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+02:49:04.450 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+02:49:04.455 [pool-1-thread-1] INFO ServiceOutput -
+02:49:04.704 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:04.700  INFO 7 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v0.0.1-SNAPSHOT using Java 11.0.8 on 620eebc48b3a with PID 7 (/app.jar started by root in /)
+02:49:04.713 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:04.712  INFO 7 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+02:49:05.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:06.296 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:49:06.297 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=true, cpuLoad=[0.03232323232323232, 0.028426395939086295, 0.03363914373088685, 0.020429009193054137, 0.11020408163265306, 0.8038422649140546], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1099, 1128, 1050, 1088, 1046, 1038]  }}
+02:49:06.324 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:49:06.856 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:06.855  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+02:49:06.878 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:06.877  INFO 7 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+02:49:06.880 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:06.877  INFO 7 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+02:49:06.988 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:06.987  INFO 7 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+02:49:06.989 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:06.987  INFO 7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2106 ms
+02:49:07.112 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.109  INFO 7 --- [           main] i.u.d.s.controller.MainController        : Data file existed? false
+02:49:07.392 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.391  INFO 7 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+02:49:07.703 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.702  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+02:49:07.725 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.724  INFO 7 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in 4.232 seconds (JVM running for 5.08)
+02:49:07.868 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.867  INFO 7 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:49:07.869 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.867  INFO 7 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+02:49:07.870 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:49:07.869  INFO 7 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+02:49:08.756 [WebSocketConnectReadThread-94] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:10.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:49:13.719 [WebSocketConnectReadThread-97] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:15.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:18.739 [WebSocketConnectReadThread-100] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:20.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:49:23.678 [WebSocketConnectReadThread-103] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:25.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:28.741 [WebSocketConnectReadThread-106] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:30.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:49:33.756 [WebSocketConnectReadThread-109] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:35.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:36.298 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:49:36.299 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=true, cpuLoad=[0.4904522613065327, 0.007021063189568706, 0.00501002004008016, 0.013986013986013986, 0.00501002004008016, 0.010040160642570281], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1042, 1033, 1039, 1035, 1045, 1032]  }}
+02:49:36.330 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:49:38.743 [WebSocketConnectReadThread-112] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:40.521 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+02:49:43.740 [WebSocketConnectReadThread-115] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:45.521 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+02:49:47.740 [ie.ucd.dempsey.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing cloud-node
+02:49:47.740 [ie.ucd.dempsey.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$
+
+
+EDGE
+robert@ROBERT-PC C:\Users\Robert\fyp\fyp-parent\mec-framework\ServiceNode>mvn exec:java -Pedge
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------< ie.ucd.dempsey.mecframework:ServiceNode >---------------
+[INFO] Building ServiceNode 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ ServiceNode ---
+02:46:22.315 [ie.ucd.dempsey.mecframework.Main.main()] INFO Main - C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+02:46:22.359 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG DockerController - Checking Files.exists(C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar)?=true
+02:46:22.374 [ie.ucd.dempsey.mecframework.Main.main()] INFO OSRuntime - Executing powershell.exe docker load --input C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+02:46:38.744 [ie.ucd.dempsey.mecframework.Main.main()] INFO DockerController - Waited up to 20 seconds and loading finished?=true
+02:46:38.760 [ie.ucd.dempsey.mecframework.Main.main()] INFO DockerController - docker.stdout: Loaded image: stream:latest
+02:46:38.778 [ie.ucd.dempsey.mecframework.Main.main()] INFO DockerController - Finished logging process output
+02:46:38.827 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG DockerController - C:\Users\Robert\fyp\fyp-parent\streaming-sample\stream.tar
+02:46:38.839 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG DockerController - stream.tar
+02:46:38.844 [ie.ucd.dempsey.mecframework.Main.main()] INFO OSRuntime - Executing powershell.exe docker run -p 8090:8080 stream:latest
+02:46:41.240 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:46:41.521 [ie.ucd.dempsey.mecframework.Main.main()] INFO ServiceNodeWsClient - Listening to orchestrator at csi420-01-vm1.ucd.ie/137.43.49.47:80 on local address /192.168.0.59:51249
+02:46:41.577 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeInfoRequest{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53}
+02:46:41.594 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+02:46:47.277 [pool-1-thread-1] INFO ServiceOutput -
+02:46:47.283 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+02:46:47.294 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+02:46:47.313 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+02:46:47.329 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+02:46:47.337 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+02:46:47.343 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+02:46:47.352 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+02:46:47.363 [pool-1-thread-1] INFO ServiceOutput -
+02:46:47.777 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:48.793  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v0.0.1-SNAPSHOT using Java 11.0.8 on d75c54a28a7d with PID 8 (/app.jar started by root in /)
+02:46:47.816 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:48.835  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+02:46:51.318 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:46:51.724 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:52.747  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080
+(http)
+02:46:51.786 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:52.808  INFO 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+02:46:51.804 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:52.814  INFO 8 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+02:46:52.011 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:53.032  INFO 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+02:46:52.044 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:53.033  INFO 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3842 ms
+02:46:52.275 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:53.292  INFO 8 --- [           main] i.u.d.s.controller.MainController        : Data file existed? false
+02:46:52.837 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:53.852  INFO 8 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+02:46:53.633 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:54.644  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+02:46:53.668 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:46:54.687  INFO 8 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in
+7.954 seconds (JVM running for 9.635)
+02:46:56.302 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:01.300 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:04.900 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:47:05.920  INFO 8 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet
+'dispatcherServlet'
+02:47:04.917 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:47:05.921  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+02:47:04.933 [pool-1-thread-1] INFO ServiceOutput - 2021-04-19 01:47:05.923  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+02:47:06.279 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:47:06.289 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=true, cpuLoad=[0.9303725354205885, 0.7594891984655764, 0.5811790589529476], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+02:47:06.313 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:06.351 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:47:09.390 [WebSocketConnectReadThread-23] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:11.301 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:11.321 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServiceRequest{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, desiredServiceName='stream.tar'}
+02:47:11.335 [ie.ucd.dempsey.mecframework.Main.main()] INFO ServiceNode - edge-node received a ServiceRequest!
+02:47:11.343 [ie.ucd.dempsey.mecframework.Main.main()] INFO DockerController - Trying to stop the Docker process. dockerProcess.isAlive?=true
+02:47:11.353 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG MigrationManager - Launching Transfer Server at 0.0.0.0/0.0.0.0:8095
+02:47:11.367 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: ServiceResponse{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, transferServerAddress=0.0.0.0/0.0.0.0:8095, serviceName='stream.tar'}
+02:47:11.387 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+02:47:11.391 [WebSocketSelector-30] DEBUG TransferServer - Launched TransferServer listening on 0.0.0.0/0.0.0.0:8095
+02:47:11.769 [WebSocketWorker-26] DEBUG TransferServer - connected to client at /35.246.105.4:35392
+02:47:11.906 [WebSocketWorker-26] DEBUG TransferServer - Trying to send the file
+02:47:12.462 [WebSocketWorker-26] DEBUG TransferServer - File seems to have been sent successfully
+02:47:12.477 [WebSocketWorker-26] DEBUG TransferServer - Got a Pong from TransferClient!
+02:47:14.412 [WebSocketConnectReadThread-31] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:16.303 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:19.460 [WebSocketConnectReadThread-34] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:21.298 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:24.607 [WebSocketConnectReadThread-37] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:26.325 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:29.541 [WebSocketConnectReadThread-40] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:31.324 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:34.351 [WebSocketConnectReadThread-43] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:36.298 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:36.305 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:47:36.357 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.584151507600299, 0.5501780430312453, 0.7124856242812141, 0.696134806740337, 0.7366794597019389, 0.7235845295055822, 0.7421383647798742], memoryLoad=[], mainMemory=[], storage=[],
+latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [19, 19, 30, 99, 67, 16]  }}
+02:47:36.481 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:47:39.485 [WebSocketConnectReadThread-46] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:41.326 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:44.531 [WebSocketConnectReadThread-49] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:46.322 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:49.585 [WebSocketConnectReadThread-52] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:51.328 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:54.566 [WebSocketConnectReadThread-55] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:47:56.339 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:47:59.490 [WebSocketConnectReadThread-58] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:01.307 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:04.598 [WebSocketConnectReadThread-61] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:06.285 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:48:06.296 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.75157779655121, 0.6935653743918953, 0.740666899267308, 0.7859178876831525, 0.8032803330491047], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [55, 84, 63, 60, 41, 118]  }}
+02:48:06.308 [pool-3-thread-2] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:06.375 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:48:09.579 [WebSocketConnectReadThread-64] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:11.289 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:14.500 [WebSocketConnectReadThread-67] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:16.303 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:19.796 [WebSocketConnectReadThread-70] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:21.305 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:24.513 [WebSocketConnectReadThread-73] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:26.299 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:29.395 [WebSocketConnectReadThread-76] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:31.291 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:34.512 [WebSocketConnectReadThread-79] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:36.280 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:48:36.286 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.7165570175438597, 0.7028223574986165, 0.69685, 0.67965, 0.660149022353353, 0.6199598796389167], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [94, 37, 144, 60, 15, 61]  }}
+02:48:36.305 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:36.347 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:48:39.565 [WebSocketConnectReadThread-82] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:41.308 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:44.520 [WebSocketConnectReadThread-85] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:46.294 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:49.590 [WebSocketConnectReadThread-88] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:51.307 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:54.588 [WebSocketConnectReadThread-91] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:48:56.296 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:48:59.330 [WebSocketConnectReadThread-94] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:00.842 [WebSocketSelector-30] INFO TransferServer - In TransferServer#onClose
+02:49:00.859 [WebSocketSelector-30] INFO TransferServer - Remote WebSocket client /35.246.105.4:35392
+02:49:00.904 [WebSocketSelector-30] INFO TransferServer - Code, Reason, Remote: 1000, , true
+02:49:00.909 [WebSocketSelector-30] INFO TransferServer - Trying to stop this TransferServer
+02:49:01.022 [Thread-53] INFO TransferServer - TransferServer has stopped.
+02:49:01.299 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:01.949 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationSuccess{targetHostUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceHostUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, serviceName='stream.tar'}
+02:49:04.329 [WebSocketConnectReadThread-98] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:06.280 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:49:06.307 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:06.309 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.6219130434782608, 0.6151376837036665, 0.614485629733661, 0.6199162679425837, 0.6026785714285714, 0.5817755844673745], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [83, 67, 114, 94, 12, 17]  }}
+02:49:06.366 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:49:09.340 [WebSocketConnectReadThread-101] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:11.298 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:14.334 [WebSocketConnectReadThread-104] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:16.308 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:19.338 [WebSocketConnectReadThread-107] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:21.303 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:24.332 [WebSocketConnectReadThread-110] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:26.290 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:29.727 [WebSocketConnectReadThread-113] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:31.299 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:34.338 [WebSocketConnectReadThread-116] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:36.283 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServerHeartbeatRequest
+02:49:36.291 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuL
+oad=[0.5445, 0.5381586162205274, 0.5476452354764524, 0.5721235831076337, 0.5399969908220071, 0.5381087682568167], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-8
+5c5-e2108229b310: [21, 14, 17, 21, 14, 20]  }}
+02:49:36.301 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:36.340 [ie.ucd.dempsey.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b
+0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+02:49:39.325 [WebSocketConnectReadThread-119] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:41.289 [pool-3-thread-1] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:44.332 [WebSocketConnectReadThread-122] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+02:49:46.297 [pool-3-thread-3] DEBUG PerfCounterQuery - Localized Processor Information to Processor Information
+02:49:47.722 [ie.ucd.dempsey.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing edge-node
+02:49:47.728 [ie.ucd.dempsey.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+
+robert@ROBERT-PC C:\Users\Robert\fyp\fyp-parent\mec-framework\ServiceNode>
+
+
+ORCHESTRATOR
+student@master-vm:~/FYP/fyp-parent/mec-framework/Orchestrator$ mvn exec:java -Pdebug
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< clarke.fyp:Orchestrator >-----------------------
+[INFO] Building Orchestrator 0.8.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ Orchestrator ---
+01:23:11.710 [service.orchestrator.Main.main()] INFO Main - Starting Orchestrator
+01:23:16.868 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:21.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:26.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:31.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:36.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:41.856 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:46.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:23:47.090 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:37180
+01:23:47.093 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 176.61.20.247
+01:23:47.110 [WebSocketWorker-13] DEBUG Orchestrator - Client 5eabd15d-027e-463f-89ba-31b793e8ac53 has address /176.61.20.247
+01:23:47.116 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53}
+01:23:47.229 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+01:23:51.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:23:51.856 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:23:51.876 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has low cpu 0.0
+01:23:56.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:23:56.858 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:23:56.865 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has low cpu 0.0
+01:24:01.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:24:01.858 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:24:01.861 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has low cpu 0.0
+01:24:06.357 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:37182
+01:24:06.358 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 176.61.20.247
+01:24:06.359 [WebSocketWorker-13] DEBUG Orchestrator - Client 0c7ee63a-01cc-4b0d-85c5-e2108229b310 has address /176.61.20.247
+01:24:06.361 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:06.695 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:24:06.696 [WebSocketWorker-13] INFO MobileClientRegistry - Adding to MobileClientRegistry MobileClient: 0c7ee63a-01cc-4b0d-85c5-e2108229b310 ping=/176.61.20.247:8071
+01:24:06.708 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:06.717 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8090
+01:24:06.721 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+01:24:06.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:24:06.856 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:24:06.857 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has low cpu 0.0
+01:24:11.452 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:11.459 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8090
+01:24:11.462 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+01:24:11.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:24:11.856 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:24:11.858 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has low cpu 0.0
+01:24:11.888 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:24:11.906 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=true, cpuLoad=[0.9303725354205885, 0.7594891984655764, 0.5811790589529476], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+01:24:11.918 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:24:16.172 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:37184
+01:24:16.175 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 35.246.105.4
+01:24:16.179 [WebSocketWorker-13] DEBUG Orchestrator - Client b3bf60c7-bee0-43c0-b435-d7d2815d018f has address /35.246.105.4
+01:24:16.189 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f}
+01:24:16.247 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+01:24:16.253 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:24:16.444 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:16.449 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8090
+01:24:16.453 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+01:24:16.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:24:16.859 [pool-1-thread-1] DEBUG CpuTrigger - examining 5eabd15d-027e-463f-89ba-31b793e8ac53
+01:24:16.860 [pool-1-thread-1] DEBUG CpuTrigger - 5eabd15d-027e-463f-89ba-31b793e8ac53 has high cpu 0.7570135976130375
+01:24:16.862 [pool-1-thread-1] INFO Orchestrator - Migrating UUID=5eabd15d-027e-463f-89ba-31b793e8ac53 remoteSA=/127.0.0.1:37180, serviceName=true, serviceHostAddress=http://localhost:8090 -> UUID=b3bf60c7-bee0-43c0-b435-d7d2815d018f remoteSA=/127.0.0.1:37184, serviceName=false, serviceHostAddress=http://localhost:8090
+01:24:16.872 [pool-1-thread-1] DEBUG Orchestrator - Sending: ServiceRequest{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, desiredServiceName='stream.tar'}
+01:24:16.887 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+01:24:16.979 [WebSocketWorker-13] DEBUG Orchestrator - Received: ServiceResponse{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, transferServerAddress=/0.0.0.0:8095, serviceName='stream.tar'}
+01:24:16.985 [WebSocketWorker-13] DEBUG Orchestrator - Sending: ServiceResponse{targetUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, transferServerAddress=/176.61.20.247:8095, serviceName='stream.tar'}
+01:24:21.456 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:21.461 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:21.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:26.483 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:26.489 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:26.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:31.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:31.441 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:31.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:36.471 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:36.474 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:36.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:41.438 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:41.441 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:41.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:41.897 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.06262626262626263, 0.03343465045592705, 0.032388663967611336, 0.026422764227642278], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1044, 1033, 1075, 1057, 1080]  }}
+01:24:41.904 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:24:41.961 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:24:42.039 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.584151507600299, 0.5501780430312453, 0.7124856242812141, 0.696134806740337, 0.7366794597019389, 0.7235845295055822, 0.7421383647798742], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [19, 19, 30, 99, 67, 16]  }}
+01:24:42.048 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:24:46.459 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:46.462 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:46.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:51.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:51.444 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:51.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:24:56.452 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:24:56.454 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:24:56.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:01.482 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:01.486 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:01.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:06.435 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:06.438 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:06.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:11.448 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:11.452 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:11.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:11.874 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.03873598369011213, 0.026503567787971458, 0.021406727828746176, 0.028397565922920892, 0.0254323499491353, 0.021406727828746176], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1095, 1054, 1226, 1093, 1075, 1116]  }}
+01:25:11.883 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:25:11.904 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:25:11.937 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.75157779655121, 0.6935653743918953, 0.740666899267308, 0.7859178876831525, 0.8032803330491047], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [55, 84, 63, 60, 41, 118]  }}
+01:25:11.944 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:25:16.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:16.444 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:16.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:21.496 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:21.500 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:21.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:26.464 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:26.466 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:26.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:31.559 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:31.562 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:31.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:36.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:36.444 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:36.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:41.449 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:41.452 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:41.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:41.876 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=false, cpuLoad=[0.021406727828746176, 0.024539877300613498, 0.019387755102040816, 0.019387755102040816, 0.025201612903225805, 0.018404907975460124], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1207, 1064, 1132, 1064, 1169, 1084]  }}
+01:25:41.884 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:25:41.896 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:25:41.906 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.7165570175438597, 0.7028223574986165, 0.69685, 0.67965, 0.660149022353353, 0.6199598796389167], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [94, 37, 144, 60, 15, 61]  }}
+01:25:41.913 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:25:46.435 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:46.440 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:46.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:51.448 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:51.451 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:51.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:25:56.445 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:25:56.447 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:25:56.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:26:01.447 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:01.450 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:26:01.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:26:06.444 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:06.446 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+01:26:06.855 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+01:26:07.512 [WebSocketWorker-13] DEBUG Orchestrator - Received: MigrationSuccess{targetHostUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceHostUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, serviceName='stream.tar'}
+01:26:07.519 [WebSocketWorker-13] DEBUG Orchestrator - Broadcasting
+01:26:11.450 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:11.454 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:11.456 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:11.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:11.857 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:11.858 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.02249720077416758
+01:26:11.868 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=true, cpuLoad=[0.03232323232323232, 0.028426395939086295, 0.03363914373088685, 0.020429009193054137, 0.11020408163265306, 0.8038422649140546], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1099, 1128, 1050, 1088, 1046, 1038]  }}
+01:26:11.875 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:26:11.883 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:26:11.924 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.6219130434782608, 0.6151376837036665, 0.614485629733661, 0.6199162679425837, 0.6026785714285714, 0.5817755844673745], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [83, 67, 114, 94, 12, 17]  }}
+01:26:11.935 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:26:16.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:16.444 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:16.447 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:16.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:16.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:16.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:21.435 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:21.436 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:21.440 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:21.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:21.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:21.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:26.443 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:26.445 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:26.446 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:26.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:26.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:26.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:31.438 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:31.439 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:31.441 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:31.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:31.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:31.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:36.514 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:36.517 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:36.520 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:36.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:36.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:36.856 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:41.448 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:41.451 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:41.453 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:41.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:41.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:41.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.11112461588157348
+01:26:41.874 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, servicePort=8090, serviceRunning=true, cpuLoad=[0.4904522613065327, 0.007021063189568706, 0.00501002004008016, 0.013986013986013986, 0.00501002004008016, 0.010040160642570281], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [1042, 1033, 1039, 1035, 1045, 1032]  }}
+01:26:41.881 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=b3bf60c7-bee0-43c0-b435-d7d2815d018f, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:26:41.905 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=5eabd15d-027e-463f-89ba-31b793e8ac53, servicePort=8090, serviceRunning=false, cpuLoad=[0.5445, 0.5381586162205274, 0.5476452354764524, 0.5721235831076337, 0.5399969908220071, 0.5381087682568167], memoryLoad=[], mainMemory=[], storage=[], latencies={ 0c7ee63a-01cc-4b0d-85c5-e2108229b310: [21, 14, 17, 21, 14, 20]  }}
+01:26:41.912 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=5eabd15d-027e-463f-89ba-31b793e8ac53, clientId=0c7ee63a-01cc-4b0d-85c5-e2108229b310, clientUri=ws://176.61.20.247:8071}
+01:26:41.960 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310, pingServer=/0.0.0.0:8071, webSocket=null}01:26:46.441 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:46.446 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:46.448 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:46.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:46.856 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:46.857 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.14996340386754947
+01:26:51.438 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+01:26:51.441 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8090
+01:26:51.443 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+01:26:51.855 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+01:26:51.857 [pool-1-thread-1] DEBUG CpuTrigger - examining b3bf60c7-bee0-43c0-b435-d7d2815d018f
+01:26:51.859 [pool-1-thread-1] DEBUG CpuTrigger - b3bf60c7-bee0-43c0-b435-d7d2815d018f has low cpu 0.14996340386754947
+student@master-vm:~/FYP/fyp-parent/mec-framework/Orchestrator$
+
+
+CONSOLE-APP
+❯ mvn exec:java -Pdebug
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------------< ie.ucd.dempsey:console-app >---------------------
+[INFO] Building console-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ console-app ---
+02:46:58.736 [ie.ucd.dempsey.Main.main()] DEBUG Main - command line orchestrator address: ws://csi420-01-vm1.ucd.ie
+02:46:58.768 [ie.ucd.dempsey.Main.main()] DEBUG PingServer - Starting ping server on 0.0.0.0/0.0.0.0:8071
+02:46:59.122 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Connection opened to server at csi420-01-vm1.ucd.ie/137.43.49.47:80
+02:46:59.285 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received NodeInfoRequest{uuid=0c7ee63a-01cc-4b0d-85c5-e2108229b310}
+02:46:59.400 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:46:59.431 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:46:59.492 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+
+Please enter a command ( info | ping | help | quit )
+ » 02:47:02.941 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:03.420 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:03.490 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:04.190 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:04.228 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+02:47:04.607 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:47:04.622 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:47:04.945 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:04.977 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:05.008 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:06.926 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:06.948 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:06.979 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:07.680 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51251
+02:47:07.696 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:08.929 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:08.951 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:09.036 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:09.183 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:09.214 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://176.61.20.247:8090}
+02:47:09.653 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+02:47:10.933 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:10.954 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:10.986 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:11.971 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35234
+02:47:12.018 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:47:12.672 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51255
+02:47:12.672 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:47:12.935 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:12.956 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:13.041 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:14.189 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:14.937 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:15.043 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:15.090 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:16.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:16.976 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:17.076 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:17.161 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35236
+02:47:17.192 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:47:17.723 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51256
+02:47:17.761 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:18.925 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:19.178 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:19.341 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:19.525 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:20.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:20.996 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:21.096 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:21.966 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35238
+02:47:22.050 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:47:22.728 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51257
+02:47:22.813 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:47:22.929 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:23.021 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:23.166 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:24.184 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:24.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:25.016 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:25.116 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:26.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:26.956 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:27.035 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35240
+02:47:27.088 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:47:27.157 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:27.751 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51258
+02:47:27.804 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:28.937 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:29.021 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:29.121 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:29.190 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:30.940 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:31.025 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:31.094 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:31.964 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35242
+02:47:32.026 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:47:32.659 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51259
+02:47:32.665 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:47:32.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:33.012 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:33.128 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:34.183 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:34.646 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:47:34.646 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:47:34.941 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:35.084 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:35.269 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:36.935 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:36.951 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:37.073 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:37.174 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35244
+02:47:37.252 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:47:37.706 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51260
+02:47:37.753 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:38.940 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:38.993 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:39.109 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:39.194 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:40.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:40.980 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:41.059 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:42.014 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35246
+02:47:42.061 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:47:42.731 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51261
+02:47:42.747 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:47:42.932 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:43.085 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:43.117 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:44.181 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:44.935 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:45.020 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:45.204 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:46.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:47.108 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:47.208 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:47.324 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35248
+02:47:47.524 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:47:47.741 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51262
+02:47:47.810 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:48.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:48.944 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:48.975 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:49.191 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:50.932 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:50.978 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:51.032 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:51.996 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35250
+02:47:52.079 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:47:52.735 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51266
+02:47:52.782 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:47:52.936 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:53.021 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:53.137 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:54.185 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:47:54.939 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:55.024 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:55.155 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:56.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:56.974 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:57.005 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35252
+02:47:57.042 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:57.074 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:47:57.690 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51267
+02:47:57.728 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:47:58.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:47:58.946 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:47:59.015 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:47:59.178 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:00.935 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:01.067 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:01.183 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:02.069 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35254
+02:48:02.185 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:02.755 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51268
+02:48:02.839 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:02.940 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:03.124 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:03.324 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:04.188 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:04.621 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:48:04.627 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:48:04.943 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:05.228 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:05.291 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:06.925 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:06.978 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35256
+02:48:07.009 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:07.094 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:07.163 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:07.779 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51269
+02:48:07.863 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:08.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:09.127 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:09.165 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:09.181 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:10.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:10.968 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:11.000 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:12.217 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35258
+02:48:12.302 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:12.756 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51270
+02:48:12.787 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:12.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:13.056 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:13.341 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:14.189 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:14.937 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:14.990 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:15.122 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:16.926 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:16.979 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:16.994 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35260
+02:48:17.095 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:17.148 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:17.865 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51271
+02:48:17.980 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:18.929 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:19.029 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:19.151 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:19.182 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:20.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:20.953 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:21.085 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:22.002 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35262
+02:48:22.072 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:22.704 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51272
+02:48:22.773 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:22.936 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:23.007 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:23.105 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:24.191 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:24.940 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:24.962 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:25.109 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:26.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:26.980 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:27.027 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:27.296 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35264
+02:48:27.443 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:27.697 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51273
+02:48:27.712 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:28.930 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:29.015 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:29.115 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:29.184 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:30.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:31.019 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:31.134 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:32.104 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35266
+02:48:32.173 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:32.721 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51274
+02:48:32.768 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:32.944 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:32.990 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:33.274 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:34.192 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:34.609 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:48:34.624 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:48:34.924 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:35.009 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:35.125 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:36.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:37.044 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:37.144 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:37.159 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35268
+02:48:37.259 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:37.660 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51275
+02:48:37.782 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:38.932 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:39.016 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:39.101 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:39.179 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:40.936 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:41.005 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:41.105 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:42.069 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35270
+02:48:42.207 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:42.739 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51276
+02:48:42.770 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:42.940 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:43.093 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:43.224 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:44.188 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:44.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:44.989 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:45.074 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:46.930 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:47.015 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:47.046 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:47.147 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35272
+02:48:47.194 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:47.779 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51277
+02:48:47.832 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:48.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:49.018 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:49.103 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:49.181 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:50.937 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:50.999 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:51.037 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:52.107 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35274
+02:48:52.208 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:48:52.787 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51278
+02:48:52.887 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:48:52.924 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:53.087 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:53.203 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:54.189 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:48:54.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:55.012 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:55.190 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:56.916 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35276
+02:48:56.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:56.947 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:56.963 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:48:56.978 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:57.634 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51279
+02:48:57.649 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:48:58.936 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:48:58.983 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:48:59.020 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:48:59.183 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:00.296 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationSuccess{targetHostUuid=b3bf60c7-bee0-43c0-b435-d7d2815d018f, sourceHostUuid=5eabd15d-027e-463f-89ba-31b793e8ac53, serviceName='stream.tar'}
+02:49:00.942 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:49:00.984 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:49:01.025 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:49:01.918 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35284
+02:49:01.955 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:49:02.641 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51280
+02:49:02.641 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:49:02.942 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8090 http://176.61.20.247:8090/dryrun
+02:49:02.957 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8090 http://176.61.20.247:8090/submit
+02:49:02.973 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8090/submit) 201
+02:49:04.191 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:04.229 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:04.244 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - New Service Host Address! http://176.61.20.247:8090 -> http://35.246.105.4:8090
+02:49:04.607 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:49:04.623 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:49:04.946 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:06.326 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:06.395 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:06.912 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35286
+02:49:06.949 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:49:07.413 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:07.450 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:07.497 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:07.635 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51281
+02:49:07.650 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:49:08.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:08.969 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:09.016 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:09.185 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:09.216 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:10.935 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:10.972 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:11.041 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:11.958 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35288
+02:49:11.974 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:49:12.643 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51282
+02:49:12.643 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:49:12.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:12.975 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:13.006 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:14.177 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:14.208 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:14.924 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:14.962 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:15.008 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:16.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:16.950 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35290
+02:49:16.981 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:16.981 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:49:17.044 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:17.645 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51283
+02:49:17.651 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:49:18.931 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:18.969 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:19.000 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:19.185 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:19.231 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:20.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:20.972 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:21.019 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:21.921 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35292
+02:49:21.952 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:49:22.638 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51284
+02:49:22.638 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:49:22.939 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:22.992 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:23.093 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:24.179 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:24.210 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:24.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:24.964 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:24.995 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:26.930 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:26.968 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35294
+02:49:26.983 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:27.015 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:49:27.030 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:27.769 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51285
+02:49:27.769 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:49:28.934 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:29.135 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:29.188 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:29.288 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:29.288 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:30.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:30.975 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:31.038 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:31.977 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35296
+02:49:32.008 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:49:32.641 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51286
+02:49:32.657 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:49:32.927 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:32.996 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:33.027 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:34.178 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:34.247 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:34.616 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received ServerHeartbeatRequest
+02:49:34.648 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - {
+  "uuid": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "pingServer": "0.0.0.0:8071",
+  "type": "MobileClientInfo"
+}
+02:49:34.933 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:34.986 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:35.018 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:36.926 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:36.957 [WebSocketWorker-18] INFO PingServer - PingServer has client /35.246.105.4:35298
+02:49:36.957 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:36.995 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+02:49:36.995 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:37.628 [WebSocketWorker-15] INFO PingServer - PingServer has client /192.168.0.1:51288
+02:49:37.644 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+02:49:38.932 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:38.979 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:39.048 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:39.180 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:39.217 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:40.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:41.007 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:41.054 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:41.925 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:35300
+02:49:41.972 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+02:49:42.643 [WebSocketWorker-17] INFO PingServer - PingServer has client /192.168.0.1:51289
+02:49:42.658 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+02:49:42.928 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:42.974 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:43.028 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:44.178 [pool-3-thread-1] DEBUG CommandLineWsClient - {
+  "requestorID": "0c7ee63a-01cc-4b0d-85c5-e2108229b310",
+  "type": "HostRequest"
+}
+02:49:44.216 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=0c7ee63a-01cc-4b0d-85c5-e2108229b310, serviceHostAddress=http://35.246.105.4:8090}
+02:49:44.943 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:45.008 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:45.080 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:46.050 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Closing the WebSocketClient:
+02:49:46.065 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - hostRequestScheduler Shutdown? true Terminated? true
+02:49:46.088 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - code: 1006
+02:49:46.090 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - reason:
+02:49:46.090 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - remote: true
+02:49:46.936 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:46.982 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:47.051 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+02:49:48.938 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8090 http://35.246.105.4:8090/dryrun
+02:49:48.979 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8090 http://35.246.105.4:8090/submit
+02:49:49.023 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8090/submit) 201
+
+
+Application is stopping
+
+02:49:49.871 [ie.ucd.dempsey.Main.main()] DEBUG Main - Finished.

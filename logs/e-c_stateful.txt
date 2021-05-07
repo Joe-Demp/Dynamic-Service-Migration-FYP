@@ -1,0 +1,1152 @@
+# Orchestrator
+
+student@master-vm:~/FYP/fyp-parent/mec-framework/Orchestrator$ mvn exec:java -Pdebug
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< clarke.fyp:Orchestrator >-----------------------
+[INFO] Building Orchestrator 0.8.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ Orchestrator ---
+18:59:51.505 [service.orchestrator.Main.main()] INFO Main - Starting Orchestrator
+18:59:56.651 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:01.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:06.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:11.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:16.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:21.640 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:26.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:31.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:36.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:41.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:46.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:00:47.996 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:41712
+19:00:47.999 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 176.61.20.247
+19:00:48.016 [WebSocketWorker-13] DEBUG Orchestrator - Client de7933ce-47fe-4cc1-9193-95dd894337d3 has address /176.61.20.247
+19:00:48.060 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3}
+19:00:48.746 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+19:00:51.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:00:51.643 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:00:51.663 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:00:51.777 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+19:00:56.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:00:56.641 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:00:56.643 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:01.640 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:01.643 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:01.645 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:06.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:06.642 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:06.644 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:11.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:11.642 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:11.645 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:16.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:16.640 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:16.640 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:21.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:21.640 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:21.640 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has low cpu 0.0
+19:01:21.724 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.9176646706586826, 0.9796954314720813, 0.9748743718592965, 0.8994974874371859, 0.8211586901763224, 0.9526184538653366, 0.9646464646464646, 0.8589420654911839, 0.7531486146095718, 0.5012531328320802, 0.5025, 0.5199004975124378, 0.505, 0.5037406483790524, 0.5112781954887218, 0.5049751243781094, 0.5088161209068011, 0.5062034739454094, 0.5025, 0.505, 0.505, 0.5126262626262627, 0.5121951219512195, 0.5256410256410257, 0.5062034739454094, 0.5037406483790524, 0.5100502512562815, 0.5074257425742574, 0.505], memoryLoad=[0.1135415837400564, 0.11508682543667881, 0.11572574307345918, 0.11752614357071267, 0.11836000253117529, 0.11926122341500456, 0.1214219081387492, 0.1218740495334677, 0.12273240373879091, 0.12272832119798083, 0.12272832119798083, 0.12272627992757568, 0.12271811484595552, 0.12271811484595552, 0.12271607357555048, 0.12271607357555048, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.12271403230514544, 0.12271403230514544, 0.12271403230514544, 0.12271403230514544, 0.12271811484595552, 0.12271811484595552, 0.12271811484595552], mainMemory=[3557523456, 3551322112, 3548758016, 3541532672, 3538186240, 3534569472, 3525898240, 3524083712, 3520638976, 3520655360, 3520655360, 3520663552, 3520696320, 3520696320, 3520704512, 3520704512, 3520708608, 3520708608, 3520708608, 3520708608, 3520708608, 3520708608, 3520712704, 3520712704, 3520712704, 3520712704, 3520696320, 3520696320, 3520696320], storage=[1692110848, 1692110848, 1692110848, 1692110848, 1692110848], latencies={  }}
+19:01:23.756 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:41714
+19:01:23.759 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 176.61.20.247
+19:01:23.762 [WebSocketWorker-13] DEBUG Orchestrator - Client f1368b20-b959-4b7d-83f7-6a2c5ae2afe2 has address /176.61.20.247
+19:01:23.766 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:24.825 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, pingServer=/0.0.0.0:8071, webSocket=null}
+19:01:24.833 [WebSocketWorker-13] INFO MobileClientRegistry - Adding to MobileClientRegistry MobileClient: f1368b20-b959-4b7d-83f7-6a2c5ae2afe2 ping=/176.61.20.247:8071
+19:01:24.925 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:24.935 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8093
+19:01:24.946 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+19:01:26.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:26.640 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:26.641 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has high cpu 0.5092882526373509
+19:01:26.647 [pool-1-thread-1] INFO Orchestrator - Refusing to migrate: source==target.
+19:01:29.661 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:29.664 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8093
+19:01:29.667 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+19:01:31.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:31.641 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:31.642 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has high cpu 0.5092882526373509
+19:01:31.648 [pool-1-thread-1] INFO Orchestrator - Refusing to migrate: source==target.
+19:01:34.668 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:34.674 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8093
+19:01:34.677 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+19:01:36.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:36.641 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:36.643 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has high cpu 0.5092882526373509
+19:01:36.645 [pool-1-thread-1] INFO Orchestrator - Refusing to migrate: source==target.
+19:01:38.347 [WebSocketWorker-13] INFO Orchestrator - new connection :/127.0.0.1:41716
+19:01:38.348 [WebSocketWorker-13] INFO Orchestrator - X-Forwarded-For : 35.246.105.4
+19:01:38.348 [WebSocketWorker-13] DEBUG Orchestrator - Client 48160de8-8fa4-4778-9732-6405d28365a4 has address /35.246.105.4
+19:01:38.351 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeInfoRequest{uuid=48160de8-8fa4-4778-9732-6405d28365a4}
+19:01:38.490 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=48160de8-8fa4-4778-9732-6405d28365a4, servicePort=8093, serviceRunning=false, serviceInstalled=false, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+19:01:38.497 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=48160de8-8fa4-4778-9732-6405d28365a4, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+19:01:39.713 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:39.718 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://176.61.20.247:8093
+19:01:39.724 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+19:01:41.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:41.640 [pool-1-thread-1] DEBUG CpuTrigger - examining de7933ce-47fe-4cc1-9193-95dd894337d3
+19:01:41.640 [pool-1-thread-1] DEBUG CpuTrigger - de7933ce-47fe-4cc1-9193-95dd894337d3 has high cpu 0.5092882526373509
+19:01:41.641 [pool-1-thread-1] INFO Orchestrator - Migrating UUID=de7933ce-47fe-4cc1-9193-95dd894337d3 remoteSA=/127.0.0.1:41712, serviceRunning=true, serviceAddress=http://localhost:8093 -> UUID=48160de8-8fa4-4778-9732-6405d28365a4 remoteSA=/127.0.0.1:41716, serviceRunning=false, serviceAddress=http://localhost:8093
+19:01:41.642 [pool-1-thread-1] DEBUG Orchestrator - Sending: ServiceRequest{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, desiredServiceName='stream'}
+19:01:41.650 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+19:01:42.030 [WebSocketWorker-13] DEBUG Orchestrator - Received: ServiceResponse{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, transferServerAddresses=[/0.0.0.0:8094, /0.0.0.0:8095], serviceName='stream'}
+19:01:42.045 [WebSocketWorker-13] DEBUG Orchestrator - Sending: ServiceResponse{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, transferServerAddresses=[/176.61.20.247:8094, /176.61.20.247:8095], serviceName='stream'}
+19:01:44.709 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:44.713 [WebSocketWorker-13] INFO Orchestrator - Couldn't find service for client. Ignoring HostRequest.
+19:01:46.639 [pool-1-thread-1] DEBUG CpuTrigger - 0 nodes in examine
+19:01:48.767 [WebSocketWorker-13] DEBUG Orchestrator - Received: MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+19:01:48.774 [WebSocketWorker-13] DEBUG Orchestrator - Broadcasting MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+19:01:49.665 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:49.669 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:01:49.671 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:01:51.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:51.640 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:01:51.641 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.0
+19:01:51.696 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=48160de8-8fa4-4778-9732-6405d28365a4, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.06920762286860582, 0.03608247422680412, 0.050761421319796954, 0.07216494845360824, 0.050761421319796954, 0.02564102564102564, 0.7525252525252525, 0.9798994974874372, 0.98], memoryLoad=[0.07939588921659013, 0.07941993118110324, 0.07947046837181437, 0.07949156642230548, 0.07954946339807167, 0.07957841188595471, 0.08726644335443301, 0.09491718524529913, 0.10131185715344126], mainMemory=[7685267456, 7685066752, 7684644864, 7684468736, 7683985408, 7683743744, 7619563520, 7555694592, 7502311424], storage=[24792193536], latencies={ f1368b20-b959-4b7d-83f7-6a2c5ae2afe2: [32, 79]  }}
+19:01:51.711 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=48160de8-8fa4-4778-9732-6405d28365a4, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+19:01:51.716 [WebSocketWorker-13] DEBUG Orchestrator - Received: MobileClientInfo{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, pingServer=/0.0.0.0:8071, webSocket=null}
+19:01:51.740 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=false, serviceInstalled=true, cpuLoad=[0.5190839694656488, 0.5110565110565111, 0.5112219451371571, 0.505, 0.5037593984962406, 0.505, 0.5037406483790524, 0.6130653266331658, 0.516209476309227, 0.505, 0.5, 0.5075, 0.51, 0.516209476309227, 0.5037406483790524, 0.5222772277227723, 0.5, 0.5136476426799007, 0.5037406483790524, 0.5087719298245614, 0.5187032418952618, 0.8494897959183674, 0.5864661654135338, 0.5623471882640587, 0.5491183879093199, 0.5408163265306123, 0.556930693069307, 0.5376884422110553, 0.527363184079602, 0.5025], memoryLoad=[0.12271811484595552, 0.12273240373879091, 0.12273240373879091, 0.12272627992757568, 0.12272627992757568, 0.12272627992757568, 0.12272627992757568, 0.12298858317462458, 0.12306104827400377, 0.1230773784372442, 0.1230773784372442, 0.12309370860048463, 0.12309370860048463, 0.12310799749331991, 0.12310799749331991, 0.12312432765656034, 0.12318862767431937, 0.1232529276920784, 0.1232529276920784, 0.1232529276920784, 0.09760130314702653, 0.10626955792206838, 0.10641550875602945, 0.10652165481709197, 0.10651961354668693, 0.1065032833834465, 0.10653390243952221, 0.10627057855727096, 0.10175018524528923, 0.10172875190603625], mainMemory=[3520696320, 3520638976, 3520638976, 3520663552, 3520663552, 3520663552, 3520663552, 3519610880, 3519320064, 3519254528, 3519254528, 3519188992, 3519188992, 3519131648, 3519131648, 3519066112, 3518808064, 3518550016, 3518550016, 3518550016, 3621494784, 3586707456, 3586121728, 3585695744, 3585703936, 3585769472, 3585646592, 3586703360, 3604844544, 3604930560], storage=[1692110848, 1692110848, 1692106752, 1692106752, 1692106752, 1692106752], latencies={  }}
+19:01:51.775 [WebSocketWorker-13] DEBUG Orchestrator - Sending: NodeClientLatencyRequest{nodeId=de7933ce-47fe-4cc1-9193-95dd894337d3, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+19:01:54.672 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:54.676 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:01:54.678 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:01:56.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:01:56.640 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:01:56.641 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.3352270737602586
+19:01:59.669 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:01:59.670 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:01:59.670 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:02:01.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:02:01.640 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:02:01.640 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.3352270737602586
+19:02:04.664 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:02:04.666 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:02:04.670 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:02:06.640 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:02:06.641 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:02:06.641 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.3352270737602586
+19:02:10.357 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:02:10.358 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:02:10.358 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:02:11.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:02:11.640 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:02:11.641 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.3352270737602586
+19:02:14.671 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:02:14.675 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:02:14.680 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+19:02:16.639 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+19:02:16.640 [pool-1-thread-1] DEBUG CpuTrigger - examining 48160de8-8fa4-4778-9732-6405d28365a4
+19:02:16.640 [pool-1-thread-1] DEBUG CpuTrigger - 48160de8-8fa4-4778-9732-6405d28365a4 has low cpu 0.3352270737602586
+19:02:19.672 [WebSocketWorker-13] DEBUG Orchestrator - Received: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+19:02:19.673 [WebSocketWorker-13] DEBUG Orchestrator - service address of best available node: http://35.246.105.4:8093
+19:02:19.673 [WebSocketWorker-13] DEBUG Orchestrator - Sending: HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+^Cstudent@master-vm:~/FYP/fyp-parent/mec-framework/Orchestrator$
+
+
+# CloudNode
+
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$ mvn exec:java -Pcloud-jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------< ie.ucd.dempsey.mecframework:ServiceNode >---------------
+[INFO] Building ServiceNode 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ ServiceNode ---
+20:25:07.115 [ie.ucd.mecframework.Main.main()] DEBUG Main - Service state existed?=true, and was deleted
+20:25:07.120 [ie.ucd.mecframework.Main.main()] INFO Main - /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+20:25:07.128 [ie.ucd.mecframework.Main.main()] INFO Main - Did not start service. serviceFile.exists()=false startService=false
+20:25:07.262 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+20:25:07.272 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /etc/os-release
+20:25:07.277 [ie.ucd.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: NAME="Ubuntu"
+20:25:07.280 [ie.ucd.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: VERSION="20.04.2 LTS (Focal Fossa)"
+20:25:07.284 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/version
+20:25:07.307 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/cpuinfo
+20:25:07.312 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+20:25:07.433 [ie.ucd.mecframework.Main.main()] INFO ServiceNodeWsClient - Listening to orchestrator at csi420-01-vm1.ucd.ie/137.43.49.47:80 on local address /10.154.0.2:44878
+20:25:07.461 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeInfoRequest{uuid=48160de8-8fa4-4778-9732-6405d28365a4}
+20:25:07.474 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=false
+20:25:07.537 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=48160de8-8fa4-4778-9732-6405d28365a4, servicePort=8093, serviceRunning=false, serviceInstalled=false, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+20:25:07.587 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=48160de8-8fa4-4778-9732-6405d28365a4, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+20:25:10.627 [WebSocketConnectReadThread-20] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:10.734 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+20:25:11.143 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServiceResponse{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, transferServerAddresses=[/176.61.20.247:8094, /176.61.20.247:8095], serviceName='stream'}
+20:25:11.146 [ie.ucd.mecframework.Main.main()] INFO ServiceNode - cloud-node received a ServiceResponse!
+20:25:11.157 [pool-2-thread-1] DEBUG TransferClient - Launching TransferClient for Server at ws://176.61.20.247:8094
+20:25:11.160 [pool-2-thread-1] DEBUG TransferClient - Launching TransferClient for Server at ws://176.61.20.247:8095
+20:25:11.258 [WebSocketConnectReadThread-24] INFO TransferClient - connected to TransferServer at /176.61.20.247:8094
+20:25:11.301 [WebSocketConnectReadThread-24] DEBUG TransferClient - Pinged by the TransferServer!
+20:25:11.304 [WebSocketConnectReadThread-25] INFO TransferClient - connected to TransferServer at /176.61.20.247:8095
+20:25:11.311 [WebSocketConnectReadThread-25] DEBUG TransferClient - Pinged by the TransferServer!
+20:25:11.322 [WebSocketConnectReadThread-25] DEBUG TransferClient - In TransferClient#onMessage
+20:25:11.325 [WebSocketConnectReadThread-25] INFO TransferClient - Trying to write file stream.tar @ /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/mec-framework/ServiceNode/data/streamData.dat
+20:25:11.328 [WebSocketConnectReadThread-25] INFO TransferClient - File written and FileOutputStream closed
+20:25:11.330 [WebSocketConnectReadThread-25] INFO TransferClient - transfer of data/streamData.dat finished
+20:25:11.332 [WebSocketConnectReadThread-25] DEBUG TransferClient - Pinged by the TransferServer!
+20:25:12.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:12.332 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:13.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:13.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:14.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:14.323 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:15.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:15.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:15.611 [WebSocketConnectReadThread-30] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:16.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:16.324 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:17.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:17.325 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:17.343 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:17.735 [WebSocketConnectReadThread-24] DEBUG TransferClient - In TransferClient#onMessage
+20:25:17.738 [WebSocketConnectReadThread-24] INFO TransferClient - Trying to write file stream.tar @ /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+20:25:17.795 [WebSocketConnectReadThread-24] INFO TransferClient - File written and FileOutputStream closed
+20:25:17.797 [WebSocketConnectReadThread-24] INFO TransferClient - transfer of ../../streaming-sample/streaming-sample-1.jar finished
+20:25:17.798 [WebSocketConnectReadThread-24] DEBUG TransferClient - Pinged by the TransferServer!
+20:25:17.800 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:25:17.802 [pool-2-thread-1] INFO AcceptServiceTask - Success! ServiceExists!
+20:25:17.803 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:25:17.805 [pool-2-thread-1] INFO OSRuntime - Executing java -jar /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+20:25:17.813 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+20:25:17.840 [WebSocketConnectReadThread-25] INFO TransferClient - In TransferClient#onClose
+20:25:17.842 [WebSocketConnectReadThread-25] INFO TransferClient - Code: 1000
+20:25:17.844 [WebSocketConnectReadThread-25] INFO TransferClient - Reason:
+20:25:17.845 [WebSocketConnectReadThread-25] INFO TransferClient - Remote: false
+20:25:17.859 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+20:25:17.868 [WebSocketConnectReadThread-24] INFO TransferClient - In TransferClient#onClose
+20:25:17.870 [WebSocketConnectReadThread-24] INFO TransferClient - Code: 1000
+20:25:17.872 [WebSocketConnectReadThread-24] INFO TransferClient - Reason:
+20:25:17.873 [WebSocketConnectReadThread-24] INFO TransferClient - Remote: false
+20:25:18.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:18.324 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:19.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:19.324 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:19.939 [pool-1-thread-1] INFO ServiceOutput -
+20:25:19.940 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+20:25:19.942 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+20:25:19.943 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+20:25:19.944 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+20:25:19.945 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+20:25:19.949 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+20:25:19.954 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+20:25:19.955 [pool-1-thread-1] INFO ServiceOutput -
+20:25:20.277 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:20.273  INFO 20569 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v1 using Java 13.0.4 on cloud-instance with PID 20569 (/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar started by joseph_dempsey_ucdconnect_ie in /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/mec-framework/ServiceNode)
+20:25:20.287 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:20.286  INFO 20569 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+20:25:20.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:20.323 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:20.489 [WebSocketConnectReadThread-34] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:20.711 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+20:25:20.712 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true20:25:20.726 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=48160de8-8fa4-4778-9732-6405d28365a4, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.06920762286860582, 0.03608247422680412, 0.050761421319796954, 0.07216494845360824, 0.050761421319796954, 0.02564102564102564, 0.7525252525252525, 0.9798994974874372, 0.98], memoryLoad=[0.07939588921659013, 0.07941993118110324, 0.07947046837181437, 0.07949156642230548, 0.07954946339807167, 0.07957841188595471, 0.08726644335443301, 0.09491718524529913, 0.10131185715344126], mainMemory=[7685267456, 7685066752, 7684644864, 7684468736, 7683985408, 7683743744, 7619563520, 7555694592, 7502311424], storage=[24792193536], latencies={ f1368b20-b959-4b7d-83f7-6a2c5ae2afe2: [32, 79]  }}
+20:25:20.795 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=48160de8-8fa4-4778-9732-6405d28365a4, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+20:25:21.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:21.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:22.292 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.291  INFO 20569 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+20:25:22.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:22.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:22.342 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.342  INFO 20569 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:25:22.349 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:22.353 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.352  INFO 20569 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+20:25:22.454 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.453  INFO 20569 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:25:22.457 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.456  INFO 20569 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+20:25:22.547 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.545  INFO 20569 --- [           main] i.u.d.s.controller.MainController        : Data file existed? true
+20:25:22.801 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:22.800  INFO 20569 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+20:25:23.199 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:23.198  INFO 20569 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+20:25:23.221 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:23.221  INFO 20569 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in 4.53 seconds (JVM running for 5.398)
+20:25:23.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:23.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:23.729 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:23.728  INFO 20569 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:25:23.732 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:23.732  INFO 20569 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:25:23.737 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:25:23.736  INFO 20569 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+20:25:24.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:24.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:25.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:25.325 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:25.460 [WebSocketConnectReadThread-38] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:26.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:26.323 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:27.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:27.324 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:27.348 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:28.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:28.323 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:29.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:29.323 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:30.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:30.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:30.623 [WebSocketConnectReadThread-41] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:31.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:31.324 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:32.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:32.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:32.330 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:25:33.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:33.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:34.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:34.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:35.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:35.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:35.535 [WebSocketConnectReadThread-44] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:36.322 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:36.323 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:37.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:37.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:37.330 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:38.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:38.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:39.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:39.323 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:40.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:40.323 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:40.552 [WebSocketConnectReadThread-47] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:41.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:41.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:42.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:42.324 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:42.331 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:43.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:43.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:44.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:44.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:45.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:45.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:45.683 [WebSocketConnectReadThread-50] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:46.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:46.323 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:47.322 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:47.327 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:47.334 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:25:48.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:48.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:49.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:49.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:50.322 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:50.323 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:50.452 [WebSocketConnectReadThread-53] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:50.493 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing cloud-node
+20:25:50.494 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+20:25:50.495 [ie.ucd.mecframework.Main.main()] INFO JarController - Trying to stop the Java process. javaProcess.isAlive?=true
+20:25:50.504 [pool-1-thread-1] INFO ServiceOutput - javaProcess seems to have stopped. JarController does not know this.
+java.util.NoSuchElementException: No line found
+        at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+        at ie.ucd.mecframework.service.JarController.lambda$startServiceOutputThread$0(JarController.java:57)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:830)
+20:25:50.508 [pool-1-thread-1] INFO ServiceOutput - process.isAlive()=false
+
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$ cat data/streamData.dat
+2021-05-04T19:25:10.267554100Z 0.35372170665813296
+2021-05-04T19:25:10.267554100Z 0.9363238507946933
+2021-05-04T19:25:10.267554100Z 0.2228137260755163
+2021-05-04T19:25:10.267554100Z 0.42105742955192194
+2021-05-04T19:25:10.267554100Z 0.2676026684145538
+2021-05-04T19:25:10.267554100Z 0.19593784538674996
+2021-05-04T19:25:10.267554100Z 0.7986348742430734
+2021-05-04T19:25:10.267554100Z 0.5114277617106749
+2021-05-04T19:25:10.267554100Z 0.7103352022350761
+2021-05-04T19:25:10.267554100Z 0.5529773777361443
+2021-05-04T19:25:12.331680200Z 0.9508170588498113
+2021-05-04T19:25:12.331680200Z 0.7720087998777098
+2021-05-04T19:25:12.331680200Z 0.7418117455332679
+2021-05-04T19:25:12.331680200Z 0.3783830175754276
+2021-05-04T19:25:12.331680200Z 0.9931256580532385
+2021-05-04T19:25:12.331680200Z 0.8434151560409072
+2021-05-04T19:25:12.331680200Z 0.17256611806776456
+2021-05-04T19:25:12.331680200Z 0.32064427828402386
+2021-05-04T19:25:12.331680200Z 0.8348464278636789
+2021-05-04T19:25:12.331680200Z 0.8399005427424034
+2021-05-04T19:25:14.386805500Z 0.3325644969340871
+2021-05-04T19:25:14.386805500Z 0.8212882022883708
+2021-05-04T19:25:14.386805500Z 0.9455492121468669
+2021-05-04T19:25:14.386805500Z 0.13267664719894268
+2021-05-04T19:25:14.386805500Z 0.8039102654089798
+2021-05-04T19:25:14.386805500Z 0.4609583054069778
+2021-05-04T19:25:14.386805500Z 0.8428632276417894
+2021-05-04T19:25:14.386805500Z 0.9581004296646691
+2021-05-04T19:25:14.386805500Z 0.4273078470915137
+2021-05-04T19:25:14.386805500Z 0.872930593313637
+2021-05-04T19:25:16.452419Z 0.8003152613632049
+2021-05-04T19:25:16.452419Z 0.4943147597619475
+2021-05-04T19:25:16.452419Z 0.7368569694377012
+2021-05-04T19:25:16.452419Z 0.15720279676399862
+2021-05-04T19:25:16.452419Z 0.5826348951249103
+2021-05-04T19:25:16.452419Z 0.13684167953728643
+2021-05-04T19:25:16.452419Z 0.6037253145801094
+2021-05-04T19:25:16.452419Z 0.9558319200179736
+2021-05-04T19:25:16.452419Z 0.4075313493853786
+2021-05-04T19:25:16.452419Z 0.3217917768200017
+2021-05-04T19:25:18.507883300Z 0.2764744635806753
+2021-05-04T19:25:18.507883300Z 0.6089838229057284
+2021-05-04T19:25:18.507883300Z 0.00579923123366799
+2021-05-04T19:25:18.507883300Z 0.3947668690476833
+2021-05-04T19:25:18.507883300Z 0.19429023089073905
+2021-05-04T19:25:18.507883300Z 0.10119863446657451
+2021-05-04T19:25:18.507883300Z 0.6057109087521874
+2021-05-04T19:25:18.507883300Z 0.7041975983653795
+2021-05-04T19:25:18.507883300Z 0.9190950959789311
+2021-05-04T19:25:18.507883300Z 0.8286636444510062
+2021-05-04T19:25:20.557232300Z 0.9030055438356065
+2021-05-04T19:25:20.557232300Z 0.3097712973013549
+2021-05-04T19:25:20.557232300Z 0.28349724531758236
+2021-05-04T19:25:20.557232300Z 0.5708252893555776
+2021-05-04T19:25:20.557232300Z 0.5943863305040968
+2021-05-04T19:25:20.557232300Z 0.4397699417758064
+2021-05-04T19:25:20.557232300Z 0.38375706963950007
+2021-05-04T19:25:20.557232300Z 0.43346064890161895
+2021-05-04T19:25:20.557232300Z 0.8502885038473846
+2021-05-04T19:25:20.557232300Z 0.10555162979044663
+2021-05-04T19:25:22.607660100Z 0.3604283550310803
+2021-05-04T19:25:22.607660100Z 0.9453675549543885
+2021-05-04T19:25:22.607660100Z 0.18178291960734372
+2021-05-04T19:25:22.607660100Z 0.08707327019016398
+2021-05-04T19:25:22.607660100Z 0.004058741183317727
+2021-05-04T19:25:22.607660100Z 0.937122135198599
+2021-05-04T19:25:22.607660100Z 0.5168312506791847
+2021-05-04T19:25:22.607660100Z 0.8402666042493944
+2021-05-04T19:25:22.607660100Z 0.09930943495637434
+2021-05-04T19:25:22.607660100Z 0.3078911779685951
+2021-05-04T19:25:24.274344700Z 0.9427101326648355
+2021-05-04T19:25:24.274344700Z 0.7452427190911177
+2021-05-04T19:25:24.274344700Z 0.07808176014531198
+2021-05-04T19:25:24.274344700Z 0.295075930418511
+2021-05-04T19:25:24.274344700Z 0.4942739293258215
+2021-05-04T19:25:24.274344700Z 0.5137157501997713
+2021-05-04T19:25:24.274344700Z 0.9907140504647877
+2021-05-04T19:25:24.274344700Z 0.40160303994791446
+2021-05-04T19:25:24.274344700Z 0.5718263938396878
+2021-05-04T19:25:24.274344700Z 0.5046990567158531
+2021-05-04T19:25:26.282152100Z 0.024039274903329688
+2021-05-04T19:25:26.282152100Z 0.7069673780764281
+2021-05-04T19:25:26.282152100Z 0.05772386003549257
+2021-05-04T19:25:26.282152100Z 0.15944230122920677
+2021-05-04T19:25:26.282152100Z 0.7960701922217784
+2021-05-04T19:25:26.282152100Z 0.8906705659958724
+2021-05-04T19:25:26.282152100Z 0.9674337141367301
+2021-05-04T19:25:26.282152100Z 0.7597412987866798
+2021-05-04T19:25:26.282152100Z 0.4393054946424879
+2021-05-04T19:25:26.282152100Z 0.9304878686985526
+2021-05-04T19:25:28.269574600Z 0.5186236048170483
+2021-05-04T19:25:28.269574600Z 0.23816685530355508
+2021-05-04T19:25:28.269574600Z 0.048126753451819715
+2021-05-04T19:25:28.269574600Z 0.10303579786784856
+2021-05-04T19:25:28.269574600Z 0.8309583131102748
+2021-05-04T19:25:28.269574600Z 0.8244228567204978
+2021-05-04T19:25:28.269574600Z 0.41048291538798787
+2021-05-04T19:25:28.269574600Z 0.6104009529422815
+2021-05-04T19:25:28.269574600Z 0.07963316896962558
+2021-05-04T19:25:28.269574600Z 0.8989577013868567
+2021-05-04T19:25:30.276055400Z 0.07003544111769822
+2021-05-04T19:25:30.276055400Z 0.8841303896647703
+2021-05-04T19:25:30.276055400Z 0.8172735351987056
+2021-05-04T19:25:30.276055400Z 0.5431176684455329
+2021-05-04T19:25:30.276055400Z 0.6721633430507855
+2021-05-04T19:25:30.276055400Z 0.37667269221441246
+2021-05-04T19:25:30.276055400Z 0.35168275835771556
+2021-05-04T19:25:30.276055400Z 0.9245443006130477
+2021-05-04T19:25:30.276055400Z 0.23570499342875084
+2021-05-04T19:25:30.276055400Z 0.4403976092410882
+2021-05-04T19:25:32.272969100Z 0.5210212821059218
+2021-05-04T19:25:32.272969100Z 0.8371825411616229
+2021-05-04T19:25:32.272969100Z 0.4620389395627691
+2021-05-04T19:25:32.272969100Z 0.7156120113938055
+2021-05-04T19:25:32.272969100Z 0.9433520102405424
+2021-05-04T19:25:32.272969100Z 0.4271800116473111
+2021-05-04T19:25:32.272969100Z 0.4440833281203077
+2021-05-04T19:25:32.272969100Z 0.3015278046999914
+2021-05-04T19:25:32.272969100Z 0.8340882608807745
+2021-05-04T19:25:32.272969100Z 0.3791219540067837
+2021-05-04T19:25:34.279684300Z 0.1700197901242897
+2021-05-04T19:25:34.279684300Z 0.8679277905655856
+2021-05-04T19:25:34.279684300Z 0.7827321854340509
+2021-05-04T19:25:34.279684300Z 0.6114605559316069
+2021-05-04T19:25:34.279684300Z 0.030024277852020997
+2021-05-04T19:25:34.279684300Z 0.7803135010508858
+2021-05-04T19:25:34.279684300Z 0.45939324676279136
+2021-05-04T19:25:34.279684300Z 0.8356614680099529
+2021-05-04T19:25:34.279684300Z 0.129013882364565
+2021-05-04T19:25:34.279684300Z 0.25760855723074794
+2021-05-04T19:25:36.429098900Z 0.08192763449515206
+2021-05-04T19:25:36.429098900Z 0.17050399207731015
+2021-05-04T19:25:36.429098900Z 0.5843951406643779
+2021-05-04T19:25:36.429098900Z 0.559030325631769
+2021-05-04T19:25:36.429098900Z 0.6161416231924208
+2021-05-04T19:25:36.429098900Z 0.371136132853671
+2021-05-04T19:25:36.429098900Z 0.1450261518999959
+2021-05-04T19:25:36.429098900Z 0.2055311806221235
+2021-05-04T19:25:36.429098900Z 0.1043525265176205
+2021-05-04T19:25:36.429098900Z 0.13189906017794217
+2021-05-04T19:25:38.272568300Z 0.4060810387394038
+2021-05-04T19:25:38.272568300Z 0.2812501881418472
+2021-05-04T19:25:38.272568300Z 0.22170353961512512
+2021-05-04T19:25:38.272568300Z 0.35260016448646536
+2021-05-04T19:25:38.272568300Z 0.6142323137275649
+2021-05-04T19:25:38.272568300Z 0.9317049734829509
+2021-05-04T19:25:38.272568300Z 0.14497935439497367
+2021-05-04T19:25:38.272568300Z 0.21982768765666505
+2021-05-04T19:25:38.272568300Z 0.5585425741751741
+2021-05-04T19:25:38.272568300Z 0.27799260841322326
+2021-05-04T19:25:40.273081400Z 0.0852716887072319
+2021-05-04T19:25:40.273081400Z 0.448063888227929
+2021-05-04T19:25:40.273081400Z 0.32468436490634955
+2021-05-04T19:25:40.273081400Z 0.10005711865127409
+2021-05-04T19:25:40.273081400Z 0.3836951976891433
+2021-05-04T19:25:40.273081400Z 0.049768062936109914
+2021-05-04T19:25:40.273081400Z 0.7535829463834957
+2021-05-04T19:25:40.273081400Z 0.8071209232408062
+2021-05-04T19:25:40.273081400Z 0.8984553193243545
+2021-05-04T19:25:40.273081400Z 0.5592644821765782
+2021-05-04T19:25:42.352141800Z 0.29030348541490536
+2021-05-04T19:25:42.352141800Z 0.4096659226639594
+2021-05-04T19:25:42.352141800Z 0.5219223538178174
+2021-05-04T19:25:42.352141800Z 0.7221845975364307
+2021-05-04T19:25:42.352141800Z 0.5349808931605056
+2021-05-04T19:25:42.352141800Z 0.4348892281463681
+2021-05-04T19:25:42.352141800Z 0.057966285634617254
+2021-05-04T19:25:42.352141800Z 0.28037673163031773
+2021-05-04T19:25:42.352141800Z 0.21481688736142157
+2021-05-04T19:25:42.352141800Z 0.9863480893950309
+2021-05-04T19:25:44.270714100Z 0.36265923674287737
+2021-05-04T19:25:44.270714100Z 0.6316108625141889
+2021-05-04T19:25:44.270714100Z 0.4846454337750332
+2021-05-04T19:25:44.270714100Z 0.43854643521860925
+2021-05-04T19:25:44.270714100Z 0.605553964804331
+2021-05-04T19:25:44.270714100Z 0.8240697407337326
+2021-05-04T19:25:44.270714100Z 0.43329463000704826
+2021-05-04T19:25:44.270714100Z 0.5785062253694788
+2021-05-04T19:25:44.270714100Z 0.7440979378059704
+2021-05-04T19:25:44.270714100Z 0.5575319316066674
+2021-05-04T19:25:46.279455400Z 0.42394890278434316
+2021-05-04T19:25:46.279455400Z 0.3589038467975437
+2021-05-04T19:25:46.280457500Z 0.8203446276315179
+2021-05-04T19:25:46.280457500Z 0.606316415559062
+2021-05-04T19:25:46.280457500Z 0.4289429582298797
+2021-05-04T19:25:46.280457500Z 0.8111428964271074
+2021-05-04T19:25:46.280457500Z 0.4869747576755751
+2021-05-04T19:25:46.281461800Z 0.35347225424712525
+2021-05-04T19:25:46.281461800Z 0.832894513692427
+2021-05-04T19:25:46.281461800Z 0.08177214185732529
+2021-05-04T19:25:48.313990700Z 0.24874205724202958
+2021-05-04T19:25:48.313990700Z 0.931361284855464
+2021-05-04T19:25:48.313990700Z 0.2728101297359262
+2021-05-04T19:25:48.313990700Z 0.0019473207177056473
+2021-05-04T19:25:48.313990700Z 0.26580981347895594
+2021-05-04T19:25:48.313990700Z 0.8006952747487541
+2021-05-04T19:25:48.313990700Z 0.9597745760820109
+2021-05-04T19:25:48.313990700Z 0.07717449523079167
+2021-05-04T19:25:48.313990700Z 0.20704533551978188
+2021-05-04T19:25:48.313990700Z 0.46825358443213594
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$
+
+
+# EdgeNode
+
+pi@raspberrypi:~/FYP/fyp-parent/mec-framework/ServiceNode $ mvn exec:java -Pedge-jar
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------< ie.ucd.dempsey.mecframework:ServiceNode >---------------
+[INFO] Building ServiceNode 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ ServiceNode ---
+20:24:16.015 [ie.ucd.mecframework.Main.main()] DEBUG Main - Service state existed?=true, and was deleted
+20:24:16.028 [ie.ucd.mecframework.Main.main()] INFO Main - /home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+20:24:16.045 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:24:16.079 [ie.ucd.mecframework.Main.main()] INFO OSRuntime - Executing java -jar /home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+20:24:16.598 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+20:24:16.623 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /etc/os-release
+20:24:16.650 [ie.ucd.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: NAME="Raspbian GNU/Linux"
+20:24:16.674 [ie.ucd.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: VERSION_ID="10"
+20:24:16.695 [ie.ucd.mecframework.Main.main()] DEBUG LinuxOperatingSystem - os-release: VERSION="10 (buster)"
+20:24:16.717 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/version
+20:24:16.783 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/cpuinfo
+20:24:16.791 [ie.ucd.mecframework.Main.main()] DEBUG FileUtil - Reading file /proc/stat
+20:24:17.083 [ie.ucd.mecframework.Main.main()] INFO ServiceNodeWsClient - Listening to orchestrator at csi420-01-vm1.ucd.ie/137.43.49.47:80 on local address /192.168.0.88:52600
+20:24:17.334 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeInfoRequest{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3}
+20:24:17.355 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:24:17.664 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+20:24:20.773 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+20:24:20.785 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:24:20.803 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[], memoryLoad=[], mainMemory=[], storage=[], latencies={  }}
+20:24:21.324 [pool-1-thread-1] INFO ServiceOutput -
+20:24:21.328 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+20:24:21.331 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+20:24:21.334 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+20:24:21.337 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+20:24:21.349 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+20:24:21.352 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+20:24:21.358 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+20:24:21.361 [pool-1-thread-1] INFO ServiceOutput -
+20:24:21.810 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:21.839 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:22.093 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:22.083  INFO 10819 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v1 using Java 11.0.9.1 on raspberrypi with PID 10819 (/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar started by pi in /home/pi/FYP/fyp-parent/mec-framework/ServiceNode)20:24:22.109 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:22.096  INFO 10819 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+20:24:22.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:22.813 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:23.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:23.815 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:24.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:24.813 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:25.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:25.813 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:26.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:26.824 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:26.870 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:24:26.912 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:26.911  INFO 10819 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+20:24:27.003 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:26.996  INFO 10819 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:24:27.008 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:26.997  INFO 10819 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+20:24:27.345 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:27.344  INFO 10819 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:24:27.351 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:27.345  INFO 10819 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4929 ms
+20:24:27.772 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:27.746  INFO 10819 --- [           main] i.u.d.s.controller.MainController        : Data file existed? false
+20:24:27.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:27.814 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:28.522 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:28.521  INFO 10819 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+20:24:28.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:28.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:29.405 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:29.402  INFO 10819 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+20:24:29.452 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:29.451  INFO 10819 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in 10.316 seconds (JVM running for 13.334)
+20:24:29.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:29.814 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:30.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:30.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:31.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:31.814 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:31.831 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:24:32.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:32.814 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:33.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:33.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:34.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:34.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:35.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:35.812 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:36.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:36.812 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:36.834 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:24:37.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:37.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:38.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:38.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:39.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:39.816 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:40.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:40.817 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:41.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:41.817 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:41.834 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:24:42.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:42.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:43.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:43.832 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:44.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:44.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:45.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:45.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:46.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:46.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:46.832 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:24:47.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:47.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:48.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:48.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:49.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:24:49.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:50.715 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+20:24:50.716 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:24:50.723 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.9176646706586826, 0.9796954314720813, 0.9748743718592965, 0.8994974874371859, 0.8211586901763224, 0.9526184538653366, 0.9646464646464646, 0.8589420654911839, 0.7531486146095718, 0.5012531328320802, 0.5025, 0.5199004975124378, 0.505, 0.5037406483790524, 0.5112781954887218, 0.5049751243781094, 0.5088161209068011, 0.5062034739454094, 0.5025, 0.505, 0.505, 0.5126262626262627, 0.5121951219512195, 0.5256410256410257, 0.5062034739454094, 0.5037406483790524, 0.5100502512562815, 0.5074257425742574, 0.505], memoryLoad=[0.1135415837400564, 0.11508682543667881, 0.11572574307345918, 0.11752614357071267, 0.11836000253117529, 0.11926122341500456, 0.1214219081387492, 0.1218740495334677, 0.12273240373879091, 0.12272832119798083, 0.12272832119798083, 0.12272627992757568, 0.12271811484595552, 0.12271811484595552, 0.12271607357555048, 0.12271607357555048, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.1227150529403479, 0.12271403230514544, 0.12271403230514544, 0.12271403230514544, 0.12271403230514544, 0.12271811484595552, 0.12271811484595552, 0.12271811484595552], mainMemory=[3557523456, 3551322112, 3548758016, 3541532672, 3538186240, 3534569472, 3525898240, 3524083712, 3520638976, 3520655360, 3520655360, 3520663552, 3520696320, 3520696320, 3520704512, 3520704512, 3520708608, 3520708608, 3520708608, 3520708608, 3520708608, 3520708608, 3520712704, 3520712704, 3520712704, 3520712704, 3520696320, 3520696320, 3520696320], storage=[1692110848, 1692110848, 1692110848, 1692110848, 1692110848], latencies={  }}
+20:24:50.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:50.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:51.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:51.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:51.830 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:24:52.810 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:52.813 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:53.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:53.814 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:54.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:24:54.813 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:55.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:55.813 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:56.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:56.813 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:56.833 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:24:57.595 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:57.593  INFO 10819 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:24:57.597 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:57.594  INFO 10819 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:24:57.601 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 20:24:57.600  INFO 10819 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+20:24:57.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:57.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:58.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:58.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:24:59.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:24:59.814 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:00.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:00.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:01.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:01.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:01.832 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:02.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:02.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:03.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:03.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:04.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:04.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:05.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:05.814 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:06.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:06.812 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:06.831 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:07.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:07.814 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:08.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:08.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:09.809 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+20:25:09.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:10.778 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: ServiceRequest{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, desiredServiceName='stream'}
+20:25:10.782 [ie.ucd.mecframework.Main.main()] INFO ServiceNode - edge-node received a ServiceRequest!
+20:25:10.785 [ie.ucd.mecframework.Main.main()] INFO JarController - Trying to stop the Java process. javaProcess.isAlive?=true
+20:25:10.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:10.813 [pool-1-thread-1] INFO ServiceOutput - javaProcess seems to have stopped. JarController does not know this.
+java.util.NoSuchElementException: No line found
+        at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+        at ie.ucd.mecframework.service.JarController.lambda$startServiceOutputThread$0(JarController.java:57)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:834)
+20:25:10.817 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:10.833 [ie.ucd.mecframework.Main.main()] DEBUG StatefulMigrationStrategy - Launching Transfer Server at 0.0.0.0/0.0.0.0:8091
+20:25:10.839 [pool-1-thread-1] INFO ServiceOutput - process.isAlive()=false
+20:25:10.856 [ie.ucd.mecframework.Main.main()] DEBUG StatefulMigrationStrategy - Launching Transfer Server at 0.0.0.0/0.0.0.0:8092
+20:25:11.006 [WebSocketSelector-30] DEBUG TransferServer - Launched TransferServer listening on 0.0.0.0/0.0.0.0:8092
+20:25:11.022 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: ServiceResponse{targetUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, transferServerAddresses=[0.0.0.0/0.0.0.0:8094, 0.0.0.0/0.0.0.0:8095], serviceName='stream'}
+20:25:11.032 [WebSocketSelector-25] DEBUG TransferServer - Launched TransferServer listening on 0.0.0.0/0.0.0.0:8091
+20:25:11.082 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+20:25:11.243 [WebSocketWorker-21] DEBUG TransferServer - connected to client at /35.246.105.4:33874
+20:25:11.293 [WebSocketWorker-26] DEBUG TransferServer - connected to client at /35.246.105.4:42318
+20:25:11.300 [WebSocketWorker-26] DEBUG TransferServer - Trying to send the file
+20:25:11.303 [WebSocketWorker-26] DEBUG TransferServer - File seems to have been sent successfully
+20:25:11.308 [WebSocketWorker-21] DEBUG TransferServer - Trying to send the file
+20:25:11.324 [WebSocketWorker-26] DEBUG TransferServer - Got a Pong from TransferClient!
+20:25:11.346 [WebSocketWorker-26] DEBUG TransferServer - Got a Pong from TransferClient!
+20:25:11.479 [WebSocketWorker-21] DEBUG TransferServer - File seems to have been sent successfully
+20:25:11.487 [WebSocketWorker-21] DEBUG TransferServer - Got a Pong from TransferClient!
+20:25:11.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:11.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:11.841 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+20:25:12.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:12.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:13.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:13.812 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:14.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:14.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:15.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:15.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:16.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:16.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:16.832 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:17.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:17.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:17.813 [WebSocketWorker-21] DEBUG TransferServer - Got a Pong from TransferClient!
+20:25:17.818 [WebSocketSelector-30] INFO TransferServer - In TransferServer#onClose
+20:25:17.819 [WebSocketSelector-30] INFO TransferServer - Remote WebSocket client null
+20:25:17.820 [WebSocketSelector-30] INFO TransferServer - Code, Reason, Remote: 1000, , true
+20:25:17.821 [WebSocketSelector-30] INFO TransferServer - Trying to stop this TransferServer
+20:25:17.846 [Thread-12] INFO TransferServer - TransferServer has stopped.
+20:25:17.854 [WebSocketSelector-25] INFO TransferServer - In TransferServer#onClose
+20:25:17.855 [WebSocketSelector-25] INFO TransferServer - Remote WebSocket client null
+20:25:17.856 [WebSocketSelector-25] INFO TransferServer - Code, Reason, Remote: 1000, , true
+20:25:17.857 [WebSocketSelector-25] INFO TransferServer - Trying to stop this TransferServer
+20:25:17.877 [Thread-13] INFO TransferServer - TransferServer has stopped.
+20:25:17.906 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+20:25:18.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:18.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:19.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:19.813 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:20.715 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+20:25:20.719 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+20:25:20.724 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=de7933ce-47fe-4cc1-9193-95dd894337d3, servicePort=8093, serviceRunning=false, serviceInstalled=true, cpuLoad=[0.5190839694656488, 0.5110565110565111, 0.5112219451371571, 0.505, 0.5037593984962406, 0.505, 0.5037406483790524, 0.6130653266331658, 0.516209476309227, 0.505, 0.5, 0.5075, 0.51, 0.516209476309227, 0.5037406483790524, 0.5222772277227723, 0.5, 0.5136476426799007, 0.5037406483790524, 0.5087719298245614, 0.5187032418952618, 0.8494897959183674, 0.5864661654135338, 0.5623471882640587, 0.5491183879093199, 0.5408163265306123, 0.556930693069307, 0.5376884422110553, 0.527363184079602, 0.5025], memoryLoad=[0.12271811484595552, 0.12273240373879091, 0.12273240373879091, 0.12272627992757568, 0.12272627992757568, 0.12272627992757568, 0.12272627992757568, 0.12298858317462458, 0.12306104827400377, 0.1230773784372442, 0.1230773784372442, 0.12309370860048463, 0.12309370860048463, 0.12310799749331991, 0.12310799749331991, 0.12312432765656034, 0.12318862767431937, 0.1232529276920784, 0.1232529276920784, 0.1232529276920784, 0.09760130314702653, 0.10626955792206838, 0.10641550875602945, 0.10652165481709197, 0.10651961354668693, 0.1065032833834465, 0.10653390243952221, 0.10627057855727096, 0.10175018524528923, 0.10172875190603625], mainMemory=[3520696320, 3520638976, 3520638976, 3520663552, 3520663552, 3520663552, 3520663552, 3519610880, 3519320064, 3519254528, 3519254528, 3519188992, 3519188992, 3519131648, 3519131648, 3519066112, 3518808064, 3518550016, 3518550016, 3518550016, 3621494784, 3586707456, 3586121728, 3585695744, 3585703936, 3585769472, 3585646592, 3586703360, 3604844544, 3604930560], storage=[1692110848, 1692110848, 1692106752, 1692106752, 1692106752, 1692106752], latencies={  }}
+20:25:20.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:20.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:20.861 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: NodeClientLatencyRequest{nodeId=de7933ce-47fe-4cc1-9193-95dd894337d3, clientId=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, clientUri=ws://176.61.20.247:8071}
+20:25:21.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:21.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:21.831 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:25:22.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:22.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:23.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:23.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:24.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:24.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:24.885 [WebSocketConnectReadThread-34] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:25.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:25.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:26.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:26.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:26.832 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:27.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:27.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:28.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:28.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:29.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:29.812 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:29.967 [WebSocketConnectReadThread-37] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:30.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:30.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:31.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:31.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:31.830 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:25:32.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:32.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:33.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:33.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:34.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:34.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:34.974 [WebSocketConnectReadThread-40] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:35.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:35.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:36.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:36.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:36.830 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:37.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:37.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:38.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:38.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:39.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:39.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:39.892 [WebSocketConnectReadThread-43] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:40.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:40.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:41.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:41.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:41.830 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+20:25:42.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:42.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:43.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:43.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:44.809 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+20:25:44.811 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:44.882 [WebSocketConnectReadThread-46] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:45.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:45.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:46.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:46.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:46.830 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+20:25:47.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:47.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:48.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:48.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:49.809 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+20:25:49.811 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+20:25:49.879 [WebSocketConnectReadThread-49] DEBUG WebSocketPingClient - Finished. Closing. code=1000 reason= remote?=false
+20:25:50.513 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing edge-node
+20:25:50.516 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+pi@raspberrypi:~/FYP/fyp-parent/mec-framework/ServiceNode $
+
+pi@raspberrypi:~/FYP/fyp-parent/mec-framework/ServiceNode $ cat data/streamData.dat
+2021-05-04T19:24:56.270250400Z 0.5492218347092976
+2021-05-04T19:24:56.270250400Z 0.8521437628293287
+2021-05-04T19:24:56.270250400Z 0.9422418910781206
+2021-05-04T19:24:56.270250400Z 0.6264751123603144
+2021-05-04T19:24:56.270250400Z 0.8061827587647162
+2021-05-04T19:24:56.270250400Z 0.9702587860039478
+2021-05-04T19:24:56.270250400Z 0.31743461078543456
+2021-05-04T19:24:56.270250400Z 0.09105184927136101
+2021-05-04T19:24:56.270250400Z 0.9586745275629934
+2021-05-04T19:24:56.270250400Z 0.36336729524667233
+2021-05-04T19:24:58.274174Z 0.8973430127594
+2021-05-04T19:24:58.274174Z 0.9748067500885063
+2021-05-04T19:24:58.274174Z 0.5448843270741017
+2021-05-04T19:24:58.274174Z 0.9006653774273519
+2021-05-04T19:24:58.274174Z 0.8377047987883026
+2021-05-04T19:24:58.274174Z 0.35162615203042424
+2021-05-04T19:24:58.274174Z 0.14500514082504867
+2021-05-04T19:24:58.274174Z 0.43373847059625104
+2021-05-04T19:24:58.274174Z 0.25845027295209577
+2021-05-04T19:24:58.274174Z 0.9995347988638682
+2021-05-04T19:25:00.323691500Z 0.6081588673058176
+2021-05-04T19:25:00.323691500Z 0.23454161500185333
+2021-05-04T19:25:00.323691500Z 0.6484481971952998
+2021-05-04T19:25:00.323691500Z 0.7358779343585383
+2021-05-04T19:25:00.323691500Z 0.5005120754464815
+2021-05-04T19:25:00.323691500Z 0.911018831015488
+2021-05-04T19:25:00.323691500Z 0.1787150669051787
+2021-05-04T19:25:00.323691500Z 0.8076727563850677
+2021-05-04T19:25:00.323691500Z 0.5790577403089002
+2021-05-04T19:25:00.323691500Z 0.7232438067251297
+2021-05-04T19:25:02.266648Z 0.40483143185154646
+2021-05-04T19:25:02.266648Z 0.5183116131043831
+2021-05-04T19:25:02.266648Z 0.14338888758192592
+2021-05-04T19:25:02.266648Z 0.7473780609054018
+2021-05-04T19:25:02.266648Z 0.4027848381891389
+2021-05-04T19:25:02.266648Z 0.9368392046004824
+2021-05-04T19:25:02.266648Z 0.4468907047401677
+2021-05-04T19:25:02.266648Z 0.3904065200022525
+2021-05-04T19:25:02.266648Z 0.7271863504078501
+2021-05-04T19:25:02.266648Z 0.2323147044696925
+2021-05-04T19:25:04.274868900Z 0.9591300294099124
+2021-05-04T19:25:04.274868900Z 0.3455253517934763
+2021-05-04T19:25:04.274868900Z 0.7067834777103603
+2021-05-04T19:25:04.274868900Z 0.9033086413149733
+2021-05-04T19:25:04.274868900Z 0.16282217664605303
+2021-05-04T19:25:04.274868900Z 0.19621956583780176
+2021-05-04T19:25:04.274868900Z 0.49941934460862847
+2021-05-04T19:25:04.274868900Z 0.9313740268386852
+2021-05-04T19:25:04.274868900Z 0.7416068579199073
+2021-05-04T19:25:04.274868900Z 0.5264837308271517
+2021-05-04T19:25:06.307225800Z 0.017063949892012875
+2021-05-04T19:25:06.307225800Z 0.6773695289211649
+2021-05-04T19:25:06.307225800Z 0.46896623885325983
+2021-05-04T19:25:06.307225800Z 0.5753013318759473
+2021-05-04T19:25:06.307225800Z 0.30127100393711403
+2021-05-04T19:25:06.307225800Z 0.16080214692449823
+2021-05-04T19:25:06.307225800Z 0.8439704255214353
+2021-05-04T19:25:06.307225800Z 0.18541388957066451
+2021-05-04T19:25:06.307225800Z 0.18038884496953833
+2021-05-04T19:25:06.307225800Z 0.21489570670380387
+2021-05-04T19:25:08.271959500Z 0.5361361931798956
+2021-05-04T19:25:08.271959500Z 0.039574414228008004
+2021-05-04T19:25:08.271959500Z 0.07208203239655553
+2021-05-04T19:25:08.271959500Z 0.8938802547967438
+2021-05-04T19:25:08.271959500Z 0.9995371975268753
+2021-05-04T19:25:08.271959500Z 0.9518933084452001
+2021-05-04T19:25:08.271959500Z 0.6081956627600217
+2021-05-04T19:25:08.271959500Z 0.4240373317922207
+2021-05-04T19:25:08.271959500Z 0.1954053164713756
+2021-05-04T19:25:08.271959500Z 0.2875501276010536
+
+
+# console-app
+
+demps@JD-PC  ~\IntelliJProjects\fyp\console-app   master ≣ +0 ~1 -0 !                                                                                    [19:49]
+❯ mvn exec:java -Pdebug
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------------< ie.ucd.dempsey:console-app >---------------------
+[INFO] Building console-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ console-app ---
+20:24:52.458 [ie.ucd.dempsey.Main.main()] DEBUG Main - command line orchestrator address: ws://csi420-01-vm1.ucd.ie
+20:24:52.490 [ie.ucd.dempsey.Main.main()] DEBUG PingServer - Starting ping server on 0.0.0.0/0.0.0.0:8071
+20:24:52.909 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Connection opened to server at csi420-01-vm1.ucd.ie/137.43.49.47:80
+20:24:53.816 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received NodeInfoRequest{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:24:53.863 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Sending: MobileClientInfo{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, pingServer=0.0.0.0/0.0.0.0:8071, webSocket=null}
+20:24:53.918 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:24:54.126 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+
+Please enter a command ( info | ping | help | quit )
+ » 20:24:56.262 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:24:57.272 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:24:57.282 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:24:57.801 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:24:57.907 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:24:58.266 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:24:58.762 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:24:58.801 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+20:24:59.275 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:24:59.283 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:24:59.313 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:24:59.348 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:00.261 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:01.330 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:01.343 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:01.384 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:25:01.480 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:02.260 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:03.271 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:03.278 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:03.306 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:25:03.339 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:03.770 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:03.816 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+20:25:04.267 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:05.277 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:05.286 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:05.309 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:25:05.341 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:06.266 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:07.319 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:07.326 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:07.355 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:25:07.394 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:08.265 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:08.766 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:08.858 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://176.61.20.247:8093}
+20:25:09.280 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:09.288 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:09.314 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://176.61.20.247:8093 http://176.61.20.247:8093/submit
+20:25:09.444 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://176.61.20.247:8093/submit) 201
+20:25:10.260 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:10.597 [WebSocketWorker-15] INFO PingServer - PingServer has client /35.246.105.4:59552
+20:25:10.634 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+20:25:10.787 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationAlert{sourceIp=/176.61.20.247, targetIp=/35.246.105.4}
+20:25:11.270 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:11.282 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:12.309 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:12.318 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://176.61.20.247:8093
+20:25:12.326 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:13.331 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:13.339 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:13.766 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:14.361 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:14.370 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://176.61.20.247:8093
+20:25:14.380 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:15.401 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:15.411 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:15.512 [WebSocketWorker-16] INFO PingServer - PingServer has client /35.246.105.4:59558
+20:25:15.576 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+20:25:16.427 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:16.438 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://176.61.20.247:8093
+20:25:16.447 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:17.461 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:17.469 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://176.61.20.247:8093 http://176.61.20.247:8093/dryrun
+20:25:17.921 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received MigrationSuccess{targetHostUuid=48160de8-8fa4-4778-9732-6405d28365a4, sourceHostUuid=de7933ce-47fe-4cc1-9193-95dd894337d3, serviceName='stream'}
+20:25:18.489 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:18.496 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://176.61.20.247:8093
+20:25:18.503 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:18.768 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:18.803 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:18.817 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - New Service Host Address! http://176.61.20.247:8093 -> http://35.246.105.4:8093
+20:25:19.516 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:19.524 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:20.458 [WebSocketWorker-17] INFO PingServer - PingServer has client /35.246.105.4:59560
+20:25:20.489 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+20:25:20.538 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:20.547 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://35.246.105.4:8093
+20:25:20.553 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:20.768 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HeartbeatRequest
+20:25:20.779 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Sending: MobileClientInfo{uuid=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, pingServer=0.0.0.0/0.0.0.0:8071, webSocket=null}
+20:25:21.562 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:21.571 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:22.583 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:22.591 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://35.246.105.4:8093
+20:25:22.602 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:23.613 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:23.620 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:23.770 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:23.820 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:23.860 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:23.982 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:24.268 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:24.891 [WebSocketWorker-18] INFO PingServer - PingServer has client /192.168.0.1:43814
+20:25:24.912 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+20:25:25.289 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:25.298 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:25.341 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:25.393 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:25.452 [WebSocketWorker-15] INFO PingServer - PingServer has client /35.246.105.4:59562
+20:25:25.481 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+20:25:26.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:27.293 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:27.300 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:27.345 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:27.393 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:28.264 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:28.765 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:28.804 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:29.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:29.280 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:29.321 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:29.371 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:29.887 [WebSocketWorker-16] INFO PingServer - PingServer has client /192.168.0.1:43816
+20:25:29.993 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+20:25:30.269 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:30.590 [WebSocketWorker-17] INFO PingServer - PingServer has client /35.246.105.4:59564
+20:25:30.629 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+20:25:31.278 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:31.286 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:31.339 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:31.389 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:32.264 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:33.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:33.282 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:33.324 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:33.365 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:33.761 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:33.810 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:34.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:34.901 [WebSocketWorker-18] INFO PingServer - PingServer has client /192.168.0.1:43818
+20:25:34.960 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+20:25:35.309 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:35.478 [WebSocketWorker-15] INFO PingServer - PingServer has client /35.246.105.4:59566
+20:25:35.524 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+20:25:35.530 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:35.610 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:35.670 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:36.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:37.448 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:37.695 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:37.778 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:37.844 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:38.264 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:38.775 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:39.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:39.473 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:39.497 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:39.541 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:39.639 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:39.894 [WebSocketWorker-16] INFO PingServer - PingServer has client /192.168.0.1:43820
+20:25:39.912 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+20:25:40.267 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:40.463 [WebSocketWorker-17] INFO PingServer - PingServer has client /35.246.105.4:59568
+20:25:40.493 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+20:25:41.288 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:41.300 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:41.400 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:41.451 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:42.262 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:43.355 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:43.370 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:43.416 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:43.466 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:43.766 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:43.817 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:44.263 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:44.892 [WebSocketWorker-18] INFO PingServer - PingServer has client /192.168.0.1:43822
+20:25:44.908 [WebSocketWorker-18] DEBUG PingServer - Just got a ping.
+20:25:45.288 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:45.462 [WebSocketWorker-15] INFO PingServer - PingServer has client /35.246.105.4:59570
+20:25:45.642 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:45.643 [WebSocketWorker-15] DEBUG PingServer - Just got a ping.
+20:25:45.715 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:45.765 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:46.274 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:47.286 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:47.296 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:47.346 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:47.404 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:48.266 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:48.765 [pool-3-thread-1] DEBUG CommandLineWsClient - Sending: HostRequest{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2}
+20:25:48.808 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Received HostResponse{requestorID=f1368b20-b959-4b7d-83f7-6a2c5ae2afe2, serviceHostAddress=http://35.246.105.4:8093}
+20:25:49.315 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:49.328 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:49.371 [pool-2-thread-1] DEBUG CommandLineHttpClient - URIs http://35.246.105.4:8093 http://35.246.105.4:8093/submit
+20:25:49.422 [pool-2-thread-1] INFO CommandLineHttpClient - Http: (POST http://35.246.105.4:8093/submit) 201
+20:25:49.890 [WebSocketWorker-16] INFO PingServer - PingServer has client /192.168.0.1:43824
+20:25:49.905 [WebSocketWorker-16] DEBUG PingServer - Just got a ping.
+20:25:50.269 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+20:25:50.451 [WebSocketWorker-17] INFO PingServer - PingServer has client /35.246.105.4:59572
+20:25:50.482 [WebSocketWorker-17] DEBUG PingServer - Just got a ping.
+20:25:50.553 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - Closing the WebSocketClient:
+20:25:50.581 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - hostRequestScheduler Shutdown? true Terminated? true
+20:25:50.609 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - code: 1006
+20:25:50.614 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - reason:
+20:25:50.622 [WebSocketConnectReadThread-20] DEBUG CommandLineWsClient - remote: true
+20:25:51.286 [pool-2-thread-1] DEBUG CommandLineHttpClient - Checking if service is accessible.
+20:25:51.294 [pool-2-thread-1] DEBUG CommandLineHttpClient - DR URIs http://35.246.105.4:8093 http://35.246.105.4:8093/dryrun
+20:25:52.320 [pool-2-thread-1] ERROR CommandLineHttpClient - Exception while executing Http Request: HTTP connect timed out
+20:25:52.327 [pool-2-thread-1] WARN CommandLineHttpClient - In sendData, serviceUri=http://35.246.105.4:8093
+20:25:52.333 [pool-2-thread-1] DEBUG CommandLineHttpClient - Running.
+
+
+Application is stopping
+
+20:25:53.107 [ie.ucd.dempsey.Main.main()] DEBUG Main - Finished.
+demps@JD-PC  ~\IntelliJProjects\fyp\console-app   master ≣ +0 ~1 -0 ! 

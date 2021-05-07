@@ -1,0 +1,292 @@
+# Orchestrator
+
+17:09:41.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:09:41.016 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:09:41.017 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has low cpu 0.011235944253817163
+17:09:41.038 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, servicePort=8093, serviceRunning=false, serviceInstalled=true, cpuLoad=[0.03015075376884422, 0.005, 0.005, 0.005025125628140704, 0.005, 0.0, 0.004975124378109453, 0.0, 0.01507537688442211, 0.004975124378109453, 0.0, 0.005, 0.01, 0.005, 0.015, 0.0, 0.0, 0.005, 0.01, 0.0, 0.005, 0.009950248756218905, 0.0, 0.014925373134328358, 0.005, 0.0, 0.004975124378109453, 0.005, 0.01507537688442211, 0.009950248756218905], memoryLoad=[0.07807259986369675, 0.07807652508239282, 0.07807652508239282, 0.07816925837408606, 0.07816925837408606, 0.07820016947131725, 0.07819624425262117, 0.07819624425262117, 0.07825953840409439, 0.07825953840409439, 0.07825953840409439, 0.07825953840409439, 0.07825561318539842, 0.07829437472002154, 0.07829437472002154, 0.07829437472002154, 0.07832528581725262, 0.07832528581725262, 0.0783561969144837, 0.07838710801171478, 0.07838710801171478, 0.07838710801171478, 0.07838710801171478, 0.07844500498748097, 0.07844500498748097, 0.07844500498748097, 0.07844500498748097, 0.07847591608471216, 0.07853871958384828, 0.07854166349787028], mainMemory=[7696314368, 7696281600, 7696281600, 7695507456, 7695507456, 7695249408, 7695282176, 7695282176, 7694753792, 7694753792, 7694753792, 7694753792, 7694786560, 7694462976, 7694462976, 7694462976, 7694204928, 7694204928, 7693946880, 7693688832, 7693688832, 7693688832, 7693688832, 7693205504, 7693205504, 7693205504, 7693205504, 7692947456, 7692423168, 7692398592], storage=[24773507584, 24773507584, 24773507584, 24773507584, 24773507584, 24773507584], latencies={  }}
+17:09:41.095 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=7905d422-2eb3-4ba2-88d3-cc51b1085d5a, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.047979797979797977, 0.010025062656641603, 0.002512562814070352, 0.017632241813602016, 0.007518796992481203, 0.00997506234413965, 0.0025188916876574307, 0.0075, 0.02493765586034913, 0.0025188916876574307, 0.005012531328320802, 0.2731829573934837, 0.5012531328320802, 0.5075, 0.5012531328320802, 0.5012531328320802, 0.5012531328320802, 0.5012468827930174, 0.5087719298245614, 0.5037406483790524, 0.5012531328320802, 0.5, 0.5012531328320802, 0.506265664160401, 0.5012468827930174, 0.5025, 0.5012531328320802, 0.5012531328320802, 0.507537688442211, 0.5025125628140703], memoryLoad=[0.11927040913182729, 0.11927040913182729, 0.11927040913182729, 0.11927142976702976, 0.11926938849662472, 0.11926938849662472, 0.11926938849662472, 0.11926938849662472, 0.11927142976702976, 0.11927142976702976, 0.11927142976702976, 0.11927142976702976, 0.11927755357824499, 0.11927857421344745, 0.11927653294304241, 0.11927653294304241, 0.11927653294304241, 0.11927653294304241, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11928061548385249, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745], mainMemory=[3534532608, 3534532608, 3534532608, 3534528512, 3534536704, 3534536704, 3534536704, 3534536704, 3534528512, 3534528512, 3534528512, 3534528512, 3534503936, 3534499840, 3534508032, 3534508032, 3534508032, 3534508032, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840, 3534491648, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840], storage=[1692413952, 1692413952, 1692413952, 1692413952, 1692413952, 1692413952], latencies={  }}
+17:09:46.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:09:46.012 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:09:46.012 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:09:46.021 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:09:46.026 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:09:46.044 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:09:46.127 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=false}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=false}
+17:09:51.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:09:51.012 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:09:51.012 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:09:51.014 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:09:51.016 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:09:51.018 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:09:51.043 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+17:09:56.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:09:56.012 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:09:56.013 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:09:56.018 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:09:56.023 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:09:56.027 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:09:56.044 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+17:10:01.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:10:01.014 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:10:01.016 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:10:01.018 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:10:01.022 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:10:01.027 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:10:01.044 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+17:10:06.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:10:06.012 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:10:06.012 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:10:06.014 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:10:06.020 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:10:06.024 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:10:06.041 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+17:10:11.011 [pool-1-thread-1] DEBUG CpuTrigger - 1 nodes in examine
+17:10:11.014 [pool-1-thread-1] DEBUG CpuTrigger - examining 7905d422-2eb3-4ba2-88d3-cc51b1085d5a
+17:10:11.016 [pool-1-thread-1] DEBUG CpuTrigger - 7905d422-2eb3-4ba2-88d3-cc51b1085d5a has high cpu 0.502507532953802
+17:10:11.018 [pool-1-thread-1] INFO Orchestrator - Service installed: starting service on UUID=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b remoteSA=/127.0.0.1:41420, serviceName=false, serviceHostAddress=http://localhost:8093
+17:10:11.021 [pool-1-thread-1] DEBUG Orchestrator - Sending: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+17:10:11.023 [pool-1-thread-1] DEBUG Orchestrator - Sending: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+17:10:11.034 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.02, 0.0, 0.0, 0.01, 0.0, 0.235, 0.97, 0.9898477157360406, 0.97, 0.955, 0.97, 0.0, 0.005, 0.015, 0.0, 0.01, 0.005, 0.004975124378109453, 0.010050251256281407, 0.004975124378109453, 0.010050251256281407, 0.01, 0.004975124378109453, 0.005050505050505051, 0.009950248756218905, 0.005050505050505051, 0.009950248756218905, 0.005, 0.014925373134328358, 0.0], memoryLoad=[0.07853773827917432, 0.0785686493764054, 0.0785686493764054, 0.07862949026619359, 0.07862458374282355, 0.08141541423568877, 0.08902445067790976, 0.0978184125139897, 0.0941414639004996, 0.09566003288351965, 0.09332354645471796, 0.09332354645471796, 0.09335445755194904, 0.09338536864918012, 0.09338144343048416, 0.09338144343048416, 0.09338144343048416, 0.09338144343048416, 0.0934133358323892, 0.0934133358323892, 0.09341726105108528, 0.09341726105108528, 0.09341726105108528, 0.09348006455022151, 0.09347908324554743, 0.09347515802685147, 0.09347515802685147, 0.09347515802685147, 0.09347908324554743, 0.09347908324554743], mainMemory=[7692431360, 7692173312, 7692173312, 7691665408, 7691706368, 7668408320, 7604887552, 7531474944, 7562170368, 7549493248, 7568998400, 7568998400, 7568740352, 7568482304, 7568515072, 7568515072, 7568515072, 7568515072, 7568248832, 7568248832, 7568216064, 7568216064, 7568216064, 7567691776, 7567699968, 7567732736, 7567732736, 7567732736, 7567699968, 7567699968], storage=[24773507584, 24773474816, 24773450240, 24773450240, 24773450240, 24773450240], latencies={  }}
+17:10:11.055 [WebSocketWorker-13] DEBUG Orchestrator - Received: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+17:10:11.118 [WebSocketWorker-13] DEBUG Orchestrator - Received: NodeInfo{uuid=7905d422-2eb3-4ba2-88d3-cc51b1085d5a, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.5088161209068011, 0.5025125628140703, 0.5012531328320802, 0.506265664160401, 0.5012531328320802, 0.5100502512562815, 0.5012531328320802, 0.5025, 0.5075, 0.5025125628140703, 0.5025125628140703, 0.5037593984962406, 0.5012531328320802, 0.5087719298245614, 0.5012531328320802, 0.5025125628140703, 0.5, 0.5025125628140703, 0.5087281795511222, 0.5025125628140703, 0.5012531328320802, 0.5025, 0.5012531328320802, 0.5125628140703518, 0.5025, 0.5037593984962406, 0.5025, 0.5037593984962406, 0.37, 0.007518796992481203], memoryLoad=[0.11927857421344745, 0.11927653294304241, 0.11927857421344745, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927551230783995, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927959484865003, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927959484865003, 0.11927449167263737, 0.11927449167263737, 0.11927449167263737, 0.11927449167263737, 0.11927040913182729, 0.11926530595581464], mainMemory=[3534499840, 3534508032, 3534499840, 3534503936, 3534503936, 3534503936, 3534503936, 3534512128, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534495744, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534495744, 3534516224, 3534516224, 3534516224, 3534516224, 3534532608, 3534553088], storage=[1692413952, 1692413952, 1692413952, 1692413952, 1692413952, 1692413952], latencies={  }}
+^Cstudent@master-vm:~/FYP/fyp-parent/mec-framework/Orchestrator$
+
+
+# Edge Node - applied `stress -c 2`
+
+18:33:09.948 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+18:33:09.949 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:09.952 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=7905d422-2eb3-4ba2-88d3-cc51b1085d5a, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.047979797979797977, 0.010025062656641603, 0.002512562814070352, 0.017632241813602016, 0.007518796992481203, 0.00997506234413965, 0.0025188916876574307, 0.0075, 0.02493765586034913, 0.0025188916876574307, 0.005012531328320802, 0.2731829573934837, 0.5012531328320802, 0.5075, 0.5012531328320802, 0.5012531328320802, 0.5012531328320802, 0.5012468827930174, 0.5087719298245614, 0.5037406483790524, 0.5012531328320802, 0.5, 0.5012531328320802, 0.506265664160401, 0.5012468827930174, 0.5025, 0.5012531328320802, 0.5012531328320802, 0.507537688442211, 0.5025125628140703], memoryLoad=[0.11927040913182729, 0.11927040913182729, 0.11927040913182729, 0.11927142976702976, 0.11926938849662472, 0.11926938849662472, 0.11926938849662472, 0.11926938849662472, 0.11927142976702976, 0.11927142976702976, 0.11927142976702976, 0.11927142976702976, 0.11927755357824499, 0.11927857421344745, 0.11927653294304241, 0.11927653294304241, 0.11927653294304241, 0.11927653294304241, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11928061548385249, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745, 0.11927857421344745], mainMemory=[3534532608, 3534532608, 3534532608, 3534528512, 3534536704, 3534536704, 3534536704, 3534536704, 3534528512, 3534528512, 3534528512, 3534528512, 3534503936, 3534499840, 3534508032, 3534508032, 3534508032, 3534508032, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840, 3534491648, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840, 3534499840], storage=[1692413952, 1692413952, 1692413952, 1692413952, 1692413952, 1692413952], latencies={  }}
+18:33:10.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:10.797 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:11.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:11.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:12.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:12.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:12.816 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+18:33:13.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:13.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:14.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:14.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:15.005 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:15.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:15.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:16.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:16.796 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:17.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:17.796 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:17.816 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+18:33:18.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:18.796 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:19.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:19.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:19.933 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:20.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:20.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:21.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:21.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:22.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:22.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:22.816 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+18:33:23.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:23.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:24.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:24.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:24.944 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:25.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:25.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:26.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:26.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:27.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:27.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:27.818 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+18:33:28.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:28.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:29.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:29.798 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:29.944 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:30.795 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:30.796 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:31.795 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:31.796 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:32.795 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:32.796 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:32.816 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+18:33:33.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:33.797 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:34.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:34.797 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:34.942 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:35.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:35.799 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:36.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:36.800 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:37.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:37.801 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:37.815 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+18:33:38.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:38.800 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:39.795 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:39.800 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:39.917 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+18:33:39.927 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/pi/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:39.943 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=7905d422-2eb3-4ba2-88d3-cc51b1085d5a, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.5088161209068011, 0.5025125628140703, 0.5012531328320802, 0.506265664160401, 0.5012531328320802, 0.5100502512562815, 0.5012531328320802, 0.5025, 0.5075, 0.5025125628140703, 0.5025125628140703, 0.5037593984962406, 0.5012531328320802, 0.5087719298245614, 0.5012531328320802, 0.5025125628140703, 0.5, 0.5025125628140703, 0.5087281795511222, 0.5025125628140703, 0.5012531328320802, 0.5025, 0.5012531328320802, 0.5125628140703518, 0.5025, 0.5037593984962406, 0.5025, 0.5037593984962406, 0.37, 0.007518796992481203], memoryLoad=[0.11927857421344745, 0.11927653294304241, 0.11927857421344745, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927551230783995, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927959484865003, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927755357824499, 0.11927959484865003, 0.11927449167263737, 0.11927449167263737, 0.11927449167263737, 0.11927449167263737, 0.11927040913182729, 0.11926530595581464], mainMemory=[3534499840, 3534508032, 3534499840, 3534503936, 3534503936, 3534503936, 3534503936, 3534512128, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534495744, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534503936, 3534495744, 3534516224, 3534516224, 3534516224, 3534516224, 3534532608, 3534553088], storage=[1692413952, 1692413952, 1692413952, 1692413952, 1692413952, 1692413952], latencies={  }}
+18:33:40.008 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:40.795 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:40.799 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:41.795 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:41.799 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:41.822 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing edge-node
+18:33:41.825 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+18:33:41.828 [ie.ucd.mecframework.Main.main()] INFO JarController - Trying to stop the Java process. javaProcess.isAlive?=true
+18:33:41.870 [pool-1-thread-1] INFO ServiceOutput - javaProcess seems to have stopped. JarController does not know this.
+java.util.NoSuchElementException: No line found
+        at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+        at ie.ucd.mecframework.service.JarConpi@raspberrypi:~/FYP/fyp-parent/mec-framework/ServiceNode $
+
+
+# Cloud Node
+
+18:33:09.913 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+18:33:09.914 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true18:33:09.916 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, servicePort=8093, serviceRunning=false, serviceInstalled=true, cpuLoad=[0.03015075376884422, 0.005, 0.005, 0.005025125628140704, 0.005, 0.0, 0.004975124378109453, 0.0, 0.01507537688442211, 0.004975124378109453, 0.0, 0.005, 0.01, 0.005, 0.015, 0.0, 0.0, 0.005, 0.01, 0.0, 0.005, 0.009950248756218905, 0.0, 0.014925373134328358, 0.005, 0.0, 0.004975124378109453, 0.005, 0.01507537688442211, 0.009950248756218905], memoryLoad=[0.07807259986369675, 0.07807652508239282, 0.07807652508239282, 0.07816925837408606, 0.07816925837408606, 0.07820016947131725, 0.07819624425262117, 0.07819624425262117, 0.07825953840409439, 0.07825953840409439, 0.07825953840409439, 0.07825953840409439, 0.07825561318539842, 0.07829437472002154, 0.07829437472002154, 0.07829437472002154, 0.07832528581725262, 0.07832528581725262, 0.0783561969144837, 0.07838710801171478, 0.07838710801171478, 0.07838710801171478, 0.07838710801171478, 0.07844500498748097, 0.07844500498748097, 0.07844500498748097, 0.07844500498748097, 0.07847591608471216, 0.07853871958384828, 0.07854166349787028], mainMemory=[7696314368, 7696281600, 7696281600, 7695507456, 7695507456, 7695249408, 7695282176, 7695282176, 7694753792, 7694753792, 7694753792, 7694753792, 7694786560, 7694462976, 7694462976, 7694462976, 7694204928, 7694204928, 7693946880, 7693688832, 7693688832, 7693688832, 7693688832, 7693205504, 7693205504, 7693205504, 7693205504, 7692947456, 7692423168, 7692398592], storage=[24773507584, 24773507584, 24773507584, 24773507584, 24773507584, 24773507584], latencies={  }}
+18:33:10.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:10.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:11.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:11.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:12.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:12.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:12.284 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+18:33:13.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:13.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:14.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:14.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:14.941 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:14.966 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:14.977 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:14.972 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:14.984 [pool-2-thread-1] INFO OSRuntime - Executing java -jar /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar
+18:33:15.009 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=false}
+18:33:15.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:15.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:16.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:16.278 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:16.859 [pool-1-thread-1] INFO ServiceOutput -
+18:33:16.861 [pool-1-thread-1] INFO ServiceOutput -   .   ____          _            __ _ _
+18:33:16.863 [pool-1-thread-1] INFO ServiceOutput -  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+18:33:16.864 [pool-1-thread-1] INFO ServiceOutput - ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+18:33:16.864 [pool-1-thread-1] INFO ServiceOutput -  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+18:33:16.865 [pool-1-thread-1] INFO ServiceOutput -   '  |____| .__|_| |_|_| |_\__, | / / / /
+18:33:16.869 [pool-1-thread-1] INFO ServiceOutput -  =========|_|==============|___/=/_/_/_/
+18:33:16.877 [pool-1-thread-1] INFO ServiceOutput -  :: Spring Boot ::                (v2.4.2)
+18:33:16.878 [pool-1-thread-1] INFO ServiceOutput -
+18:33:17.187 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:17.176  INFO 19791 --- [           main] i.u.d.s.StreamingSampleApplication       : Starting StreamingSampleApplication v1 using Java 13.0.4 on cloud-instance with PID 19791 (/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar started by joseph_dempsey_ucdconnect_ie in /home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/mec-framework/ServiceNode)
+18:33:17.198 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:17.198  INFO 19791 --- [           main] i.u.d.s.StreamingSampleApplication       : No active profile set, falling back to default profiles: default
+18:33:17.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:17.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:17.298 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+18:33:18.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:18.277 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:19.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:19.277 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:19.379 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.379  INFO 19791 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+18:33:19.404 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.404  INFO 19791 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:33:19.408 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.407  INFO 19791 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+18:33:19.524 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.524  INFO 19791 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:33:19.527 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.527  INFO 19791 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2219 ms
+18:33:19.623 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.621  INFO 19791 --- [           main] i.u.d.s.controller.MainController        : Data file exists? true
+18:33:19.846 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:19.846  INFO 19791 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+18:33:19.923 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:19.929 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:19.930 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:19.931 [pool-2-thread-1] INFO JarController - startService called while service already running.
+18:33:19.932 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+18:33:20.226 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:20.226  INFO 19791 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+18:33:20.247 [pool-1-thread-1] INFO ServiceOutput - 2021-05-04 18:33:20.247  INFO 19791 --- [           main] i.u.d.s.StreamingSampleApplication       : Started StreamingSampleApplication in 4.26 seconds (JVM running for 5.24)
+18:33:20.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:20.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:21.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:21.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:22.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:22.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:22.286 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+18:33:23.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:23.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:24.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:24.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:24.933 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:24.934 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:24.935 [pool-2-thread-1] INFO JarController - startService called while service already running.
+18:33:24.936 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+18:33:24.936 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:25.275 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/stat
+18:33:25.276 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:26.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:26.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:27.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:27.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:27.284 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/mounts
+18:33:28.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:28.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:29.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:29.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:29.934 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:29.935 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:29.936 [pool-2-thread-1] INFO JarController - startService called while service already running.
+18:33:29.937 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+18:33:29.951 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:30.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:30.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:31.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:31.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:32.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:32.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:32.285 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/mounts
+18:33:33.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:33.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:34.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:34.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:34.931 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:34.932 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:34.933 [pool-2-thread-1] INFO JarController - startService called while service already running.
+18:33:34.934 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+18:33:34.936 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:35.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:35.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:36.275 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/stat
+18:33:36.276 [pool-3-thread-3] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:37.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:37.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:37.283 [pool-3-thread-1] DEBUG FileUtil - Reading file /proc/mounts
+18:33:38.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:38.277 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:39.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:39.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:39.911 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: HeartbeatRequest
+18:33:39.912 [ie.ucd.mecframework.Main.main()] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true18:33:39.914 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Sending: NodeInfo{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, servicePort=8093, serviceRunning=true, serviceInstalled=true, cpuLoad=[0.02, 0.0, 0.0, 0.01, 0.0, 0.235, 0.97, 0.9898477157360406, 0.97, 0.955, 0.97, 0.0, 0.005, 0.015, 0.0, 0.01, 0.005, 0.004975124378109453, 0.010050251256281407, 0.004975124378109453, 0.010050251256281407, 0.01, 0.004975124378109453, 0.005050505050505051, 0.009950248756218905, 0.005050505050505051, 0.009950248756218905, 0.005, 0.014925373134328358, 0.0], memoryLoad=[0.07853773827917432, 0.0785686493764054, 0.0785686493764054, 0.07862949026619359, 0.07862458374282355, 0.08141541423568877, 0.08902445067790976, 0.0978184125139897, 0.0941414639004996, 0.09566003288351965, 0.09332354645471796, 0.09332354645471796, 0.09335445755194904, 0.09338536864918012, 0.09338144343048416, 0.09338144343048416, 0.09338144343048416, 0.09338144343048416, 0.0934133358323892, 0.0934133358323892, 0.09341726105108528, 0.09341726105108528, 0.09341726105108528, 0.09348006455022151, 0.09347908324554743, 0.09347515802685147, 0.09347515802685147, 0.09347515802685147, 0.09347908324554743, 0.09347908324554743], mainMemory=[7692431360, 7692173312, 7692173312, 7691665408, 7691706368, 7668408320, 7604887552, 7531474944, 7562170368, 7549493248, 7568998400, 7568998400, 7568740352, 7568482304, 7568515072, 7568515072, 7568515072, 7568515072, 7568248832, 7568248832, 7568216064, 7568216064, 7568216064, 7567691776, 7567699968, 7567732736, 7567732736, 7567732736, 7567699968, 7567699968], storage=[24773507584, 24773474816, 24773450240, 24773450240, 24773450240, 24773450240], latencies={  }}
+18:33:39.931 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: StartServiceRequest{uuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b}
+18:33:39.932 [pool-2-thread-1] DEBUG JarController - Checking Files.exists(/home/joseph_dempsey_ucdconnect_ie/FYP/fyp-parent/streaming-sample/streaming-sample-1.jar)?=true
+18:33:39.933 [pool-2-thread-1] INFO JarController - startService called while service already running.
+18:33:39.934 [pool-2-thread-1] DEBUG ServiceNodeWsClient - Sending: StartServiceResponse{targetUuid=0b2d6873-48e1-4ed6-9d8c-483f27e8b87b, serviceStarted=true}
+18:33:39.934 [ie.ucd.mecframework.Main.main()] DEBUG ServiceNodeWsClient - Received: MigrationAlert{sourceIp=null, targetIp=/35.246.105.4}
+18:33:40.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:40.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:41.275 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/stat
+18:33:41.276 [pool-3-thread-2] DEBUG FileUtil - Reading file /proc/meminfo
+18:33:41.806 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - Closing cloud-node
+18:33:41.807 [ie.ucd.mecframework.Main.main()] WARN ServiceNodeWsClient - 1006  true
+18:33:41.808 [ie.ucd.mecframework.Main.main()] INFO JarController - Trying to stop the Java process. javaProcess.isAlive?=true
+18:33:41.818 [pool-1-thread-1] INFO ServiceOutput - javaProcess seems to have stopped. JarController does not know this.
+java.util.NoSuchElementException: No line found
+        at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+        at ie.ucd.mecframework.service.JarController.lambda$startServiceOutputThread$0(JarController.java:57)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:830)
+18:33:41.823 [pool-1-thread-1] INFO ServiceOutput - process.isAlive()=false
+joseph_dempsey_ucdconnect_ie@cloud-instance:~/FYP/fyp-parent/mec-framework/ServiceNode$
