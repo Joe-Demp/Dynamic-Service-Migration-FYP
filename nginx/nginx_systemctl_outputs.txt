@@ -1,0 +1,28 @@
+student@master-vm:~$ sudo systemctl status nginx
+[sudo] password for student:
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2021-01-16 15:16:24 UTC; 3 months 24 days ago
+       Docs: man:nginx(8)
+   Main PID: 817 (nginx)
+      Tasks: 2 (limit: 4488)
+     Memory: 4.9M
+     CGroup: /system.slice/nginx.service
+             ├─817 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             └─818 nginx: worker process
+
+Warning: journal has been rotated since unit was started, output may be incomplete.
+student@master-vm:~$ sudo systemctl stop nginx
+student@master-vm:~$ sudo systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: inactive (dead) since Wed 2021-05-12 16:01:39 UTC; 16s ago
+       Docs: man:nginx(8)
+    Process: 2526596 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)
+   Main PID: 817 (code=exited, status=0/SUCCESS)
+
+May 12 16:01:39 master-vm systemd[1]: Stopping A high performance web server and a reverse proxy server...
+May 12 16:01:39 master-vm systemd[1]: nginx.service: Succeeded.
+May 12 16:01:39 master-vm systemd[1]: Stopped A high performance web server and a reverse proxy server.
+Warning: journal has been rotated since unit was started, output may be incomplete.
+student@master-vm:~$
